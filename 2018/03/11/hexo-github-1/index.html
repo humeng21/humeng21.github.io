@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo+github,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Git page搭建个人博客教程,  乐乐 lele 自然语言处理 深度学习">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
@@ -19,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>hexo+github | 乐乐的博客</title>
+    <title>Git page搭建个人博客教程 | 乐乐的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -293,13 +293,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        hexo+github
+                        Git page搭建个人博客教程
                     </div>
                 </div>
             </div>
@@ -474,7 +474,7 @@
                 <blockquote>
 <p>有任何问题请联系我扣扣：1260842695，vx：szhll5201314，24小时随时在线哦<br>如果觉得有用的话可以看心情打赏一杯奶茶，我会很开心哒。</p>
 </blockquote>
-<h3 id="我的博客源代码地址"><a href="#我的博客源代码地址" class="headerlink" title="我的博客源代码地址"></a>我的博客源代码地址</h3><p>大家可以直接素质二连，star&amp;fork我的博客源代码：<a href="https://github.com/lebolg" target="_blank" rel="noopener">https://github.com/lebolg</a><br>然后改改配置就可以写文章啦。</p>
+<h3 id="我的博客源代码地址"><a href="#我的博客源代码地址" class="headerlink" title="我的博客源代码地址"></a>我的博客源代码地址</h3><p>大家可以直接素质二连，star&amp;fork我的博客源代码：<a href="https://github.com/leblog" target="_blank" rel="noopener">https://github.com/leblog</a><br>然后改改配置就可以写文章啦。</p>
 <p>首先将所有文件下载到本地。<br>解压node_modules.zip，然后删除node_modules.zip和.git文件夹。<br>还缺一个字体（为图片添加水印需要用到），去C:\Windows\Fonts下找到STSong Regular，复制到hexo-matery-modified文件夹下。</p>
 <h3 id="快速搭建"><a href="#快速搭建" class="headerlink" title="快速搭建"></a>快速搭建</h3><p>如果你不想自己从头开始慢慢自定义主题的话，可以直接下载我的修改好的主题，然后稍微修改几个地方就好了：</p>
 <p>根目录配置文件_config.yml和主题目录配置文件_config.yml中修改个人信息。<br>根目录配置文件中修改deploy一栏的repository。<br>根目录配置文件中修改baidu_url_submit一栏的token。<br>主题配置文件中修改gitalk一栏，修改方法见正文。<br>当然前提是个性化设置章节之前的环境还是需要配置好！</p>
@@ -488,7 +488,7 @@ hexo d  # 上传网页文件到github
 </pre>
 
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>17年9月的时候开始搭建了第一个自己的独立博客，到现在也稍微像模像样了。很多小伙伴应该也想过搭建一个自己的博客，网上也有一堆详细教程。我在此稍稍总结一下具体的搭建步骤，另外网上很少有修改博客源码的个性化教程，我就稍稍分享一下我的一些修改经验，更多的个性化操作需要你自己以后去摸索。</p>
-<p>具体效果可以参观我的博客：<b>lebolg.github.io</b>，欢迎大家支持。</p>
+<p>具体效果可以参观我的博客：<b>leblog.github.io</b>，欢迎大家支持。</p>
 <p>我不是一个前端程序员，有些东西不是很了解，写的有问题或有改进的地方请大家指出。</p>
 <p>首先要了解一下我们搭建博客要用到的框架。Hexo是高效的静态站点生成框架，它基于Node.js。通过Hexo，你可以直接使用Markdown语法来撰写博客。相信很多小伙伴写工程都写过README.md文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到你的github上，然后别人就可以看到你的网页啦。是不是很简单？你无需关心网页源代码的具体细节，你只需要用心写好你的博客内容就行。</p>
 <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><hr>
@@ -521,7 +521,7 @@ npm config set registry https://registry.npm.taobao.org
 <p>定位到该目录下，输入npm i hexo-cli -g安装Hexo。会有几个报错，无视它就行。</p>
 <p>安装完后输入hexo -v验证是否安装成功。</p>
 <p>然后就要初始化我们的网站，输入hexo init初始化文件夹，接着输入npm install安装必备的组件。</p>
-<p>这样本地的网站配置也弄好啦，输入hexo g生成静态网页，然后输入hexo s打开本地服务器，然后浏览器打开<a href="http://localhost:4000/，就可以看到我们的博客啦，效果如下：" target="_blank" rel="noopener">http://localhost:4000/，就可以看到我们的博客啦，效果如下：</a><br><img src="5.png" alt></p>
+<p>这样本地的网站配置也弄好啦，输入hexo g生成静态网页，然后输入hexo s打开本地服务器，然后浏览器打开<b><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></b>，就可以看到我们的博客啦，效果如下：<br><img src="5.png" alt></p>
 <p>按ctrl+c关闭本地服务器。</p>
 <p>连接Github与本地服务器<br>首先右键打开git bash，然后输入下面命令：</p>
 <pre>
@@ -717,7 +717,7 @@ npm config set registry https://registry.npm.taobao.org
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《hexo+github》
+                    《Git page搭建个人博客教程》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/03/11/hexo-github-1/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -1043,30 +1043,30 @@ npm config set registry https://registry.npm.taobao.org
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/10/12/hexo/">
+                <a href="/2018/03/11/hexo-github-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="hexo">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Git page搭建个人博客教程">
                         
-                        <span class="card-title">hexo</span>
+                        <span class="card-title">Git page搭建个人博客教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo博客
-我从2016年开始写博客，陆陆续续写了大概两百篇博客。写博客有很多好处，其一是它能够迫使你总结你学习的知识，你需不但的消化自己的知识点，使你对知识有了更深刻的认识；其二是你的博客如同你的个人简历，记录了你的学习历程，通过写博客
+                            搭建博客的教程
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-03-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1079,6 +1079,7 @@ npm config set registry https://registry.npm.taobao.org
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1113,7 +1114,8 @@ npm config set registry https://registry.npm.taobao.org
 
 不是大牛就不能写博客了吗？
 几乎每一个程序员都听说过写博客有很多好处，但真的动手去写的却很少。其中有一个很重要的原因就是，有些人心里会认为：我不是大牛，写出来的博客没意义。
-有这种心理很正常，只是每个人表现出来的方式不太一样。像我五音不
+
+有任何问题请联系我扣扣：1260842695，vx：szhl
                         
                     </div>
                     <div class="publish-info">
@@ -1134,6 +1136,10 @@ npm config set registry https://registry.npm.taobao.org
                 </div>
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
+                    </a>
                     
                     <a href="/tags/博客/" target="_blank">
                         <span class="chip bg-color">博客</span>
@@ -1298,7 +1304,7 @@ npm config set registry https://registry.npm.taobao.org
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.3k</span>
+            <span class="white-color">3.9k</span>
             
 
             <br>
