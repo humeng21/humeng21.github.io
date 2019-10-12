@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>乐乐的博客</title>
+  
+  <subtitle>极客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://leblog.github.io/"/>
+  <updated>2019-10-12T06:20:56.324Z</updated>
+  <id>https://leblog.github.io/</id>
+  
+  <author>
+    <name>乐乐</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo</title>
+    <link href="https://leblog.github.io/2019/10/12/hexo/"/>
+    <id>https://leblog.github.io/2019/10/12/hexo/</id>
+    <published>2019-10-12T03:37:07.000Z</published>
+    <updated>2019-10-12T06:20:56.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;hexo博客&lt;/h1&gt;
+&lt;b&gt;我从2016年开始写博客，陆陆续续写了大概两百篇博客。写博客有很多好处，其一是它能够迫使你总结你学习的知识，你需不但的消化自己的知识点，使你对知识有了更深刻的认识；其二是你的博客如同你的个人简历，记录了你的学习历程，通过写博客，可以让别人认识
+        
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://leblog.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="博客" scheme="https://leblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo+github</title>
+    <link href="https://leblog.github.io/2018/03/11/hexo-github-1/"/>
+    <id>https://leblog.github.io/2018/03/11/hexo-github-1/</id>
+    <published>2018-03-11T06:30:18.000Z</published>
+    <updated>2019-10-12T03:29:58.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;有任何问题请联系我扣扣：1260842695，vx：szhll5201314，24小时随时在线哦&lt;br&gt;如果觉得有用的话可以看心情打赏一杯奶茶，我会很开心哒。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;我的博客源代码地址&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://leblog.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="博客" scheme="https://leblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为什么说程序员都应该写一写博客</title>
+    <link href="https://leblog.github.io/2018/03/10/2018-leblog/"/>
+    <id>https://leblog.github.io/2018/03/10/2018-leblog/</id>
+    <published>2018-03-10T15:08:34.000Z</published>
+    <updated>2019-10-11T05:48:47.383Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://leblog.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="博客" scheme="https://leblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二零一七年终总结</title>
+    <link href="https://leblog.github.io/2018/01/22/2017-conclusion/"/>
+    <id>https://leblog.github.io/2018/01/22/2017-conclusion/</id>
+    <published>2018-01-22T04:32:09.000Z</published>
+    <updated>2019-10-11T04:41:52.850Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://leblog.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://leblog.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
