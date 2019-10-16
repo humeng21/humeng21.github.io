@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leblog.github.io/"/>
-  <updated>2019-10-12T10:06:55.910Z</updated>
+  <updated>2019-10-16T08:10:20.667Z</updated>
   <id>https://leblog.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>VMware Workstation Pro 15下载</title>
+    <link href="https://leblog.github.io/2019/03/18/vmware-workstation-pro-15-xia-zai/"/>
+    <id>https://leblog.github.io/2019/03/18/vmware-workstation-pro-15-xia-zai/</id>
+    <published>2019-03-18T07:55:40.000Z</published>
+    <updated>2019-10-16T08:10:20.667Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Windows平台最强虚拟机软件已经更新到了VM15-版本了，VMware-Workstation-Pro-15-全面进行了改造重新制作了UI界面及LOGO图标，VMware-Workstation-允许操作系统和应用程序在一台虚拟机内部运行。&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="https://leblog.github.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="资源" scheme="https://leblog.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu与centos的区别</title>
+    <link href="https://leblog.github.io/2019/03/16/ubuntu-yu-centos-de-qu-bie/"/>
+    <id>https://leblog.github.io/2019/03/16/ubuntu-yu-centos-de-qu-bie/</id>
+    <published>2019-03-16T07:43:54.000Z</published>
+    <updated>2019-10-16T08:10:35.349Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ubuntu与centos的区别&quot;&gt;&lt;a href=&quot;#ubuntu与centos的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="ubuntu" scheme="https://leblog.github.io/tags/ubuntu/"/>
+    
+      <category term="centos" scheme="https://leblog.github.io/tags/centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git page搭建个人博客教程</title>
     <link href="https://leblog.github.io/2018/03/11/hexo-github-1/"/>
     <id>https://leblog.github.io/2018/03/11/hexo-github-1/</id>
     <published>2018-03-11T06:30:18.000Z</published>
-    <updated>2019-10-12T10:06:55.910Z</updated>
+    <updated>2019-10-16T08:10:26.928Z</updated>
     
     <summary type="html">
     
@@ -50,7 +106,7 @@
     <link href="https://leblog.github.io/2018/03/10/2018-leblog/"/>
     <id>https://leblog.github.io/2018/03/10/2018-leblog/</id>
     <published>2018-03-10T15:08:34.000Z</published>
-    <updated>2019-10-12T10:08:48.882Z</updated>
+    <updated>2019-10-16T08:10:41.925Z</updated>
     
     <summary type="html">
     

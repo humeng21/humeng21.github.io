@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leblog.github.io/2018/03/10/2018-leblog/</loc>
-    <lastmod>2019-10-12</lastmod>
+    <lastmod>2019-10-16</lastmod>
+  </url>  <url>
+    <loc>https://leblog.github.io/2019/03/16/ubuntu-yu-centos-de-qu-bie/</loc>
+    <lastmod>2019-10-16</lastmod>
   </url>  <url>
     <loc>https://leblog.github.io/2018/03/11/hexo-github-1/</loc>
-    <lastmod>2019-10-12</lastmod>
+    <lastmod>2019-10-16</lastmod>
+  </url>  <url>
+    <loc>https://leblog.github.io/2019/03/18/vmware-workstation-pro-15-xia-zai/</loc>
+    <lastmod>2019-10-16</lastmod>
   </url>
 </urlset>
