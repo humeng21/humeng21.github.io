@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leblog.github.io/"/>
-  <updated>2019-10-22T02:50:33.736Z</updated>
+  <updated>2019-10-22T11:44:11.819Z</updated>
   <id>https://leblog.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Bootstrap之网格系统</title>
-    <link href="https://leblog.github.io/2019/10/22/bootstrap-zhi-wang-ge-xi-tong/"/>
-    <id>https://leblog.github.io/2019/10/22/bootstrap-zhi-wang-ge-xi-tong/</id>
-    <published>2019-10-22T02:47:26.000Z</published>
-    <updated>2019-10-22T02:50:33.736Z</updated>
+    <title>测试知识浅谈</title>
+    <link href="https://leblog.github.io/2019/04/12/ce-shi-zhi-shi-qian-tan/"/>
+    <id>https://leblog.github.io/2019/04/12/ce-shi-zhi-shi-qian-tan/</id>
+    <published>2019-04-12T11:02:54.000Z</published>
+    <updated>2019-10-22T11:44:11.819Z</updated>
     
     <summary type="html">
     
@@ -29,18 +29,20 @@
       
         
         
-          &lt;h1 id=&quot;Bootstrap网格系统&quot;&gt;&lt;a href=&quot;#Bootstrap网格系统&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap网格系统&quot;&gt;&lt;/a&gt;Bootstrap网格系统&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Bootstrap
+          &lt;h1 id=&quot;TDD测试&quot;&gt;&lt;a href=&quot;#TDD测试&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="学习笔记" scheme="https://leblog.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
     
     
-      <category term="bootstrap" scheme="https://leblog.github.io/tags/bootstrap/"/>
+      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
     
       <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="软件测试" scheme="https://leblog.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -97,6 +99,65 @@
       <category term="ubuntu" scheme="https://leblog.github.io/tags/ubuntu/"/>
     
       <category term="centos" scheme="https://leblog.github.io/tags/centos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JUint单元测试</title>
+    <link href="https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/"/>
+    <id>https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/</id>
+    <published>2018-04-12T10:59:46.000Z</published>
+    <updated>2019-10-22T11:05:10.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;JUnit 是用于编写和运行可重复的自动化测试的开源测试框架，这样可以保证我们的代码按预期工作。&lt;/p&gt;
+&lt;p&gt;JUnit
+        
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
+    
+    
+      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap之网格系统</title>
+    <link href="https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/"/>
+    <id>https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/</id>
+    <published>2018-04-03T02:47:26.000Z</published>
+    <updated>2019-10-22T11:02:20.256Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Bootstrap网格系统&quot;&gt;&lt;a href=&quot;#Bootstrap网格系统&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap网格系统&quot;&gt;&lt;/a&gt;Bootstrap网格系统&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Bootstrap
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="bootstrap" scheme="https://leblog.github.io/tags/bootstrap/"/>
     
   </entry>
   
