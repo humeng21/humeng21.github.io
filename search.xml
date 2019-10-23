@@ -87,6 +87,60 @@
     
     
     <entry>
+      <title>如何把更新后的项目重新传到github上</title>
+      <link href="/2018/04/23/ru-he-ba-geng-xin-hou-de-xiang-mu-chong-xin-chuan-dao-github-shang/"/>
+      <url>/2018/04/23/ru-he-ba-geng-xin-hou-de-xiang-mu-chong-xin-chuan-dao-github-shang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="以后更新项目基本上就是使用下面这几条命令就行："><a href="#以后更新项目基本上就是使用下面这几条命令就行：" class="headerlink" title="以后更新项目基本上就是使用下面这几条命令就行："></a>以后更新项目基本上就是使用下面这几条命令就行：</h2><p>自己主要是更新github上的项目所以刚开始上传请看下面转自某位大神的博客，但是如果是更新github上面的项目就比较简单。</p><ol><li><p>在本地的git仓库把你更新好的项目拷到下面然后打开命令行<img src="https://img-blog.csdn.net/20180528205558250" alt></p></li><li><p>使用下面命令就行</p><ul><li>git status</li><li>git add . </li><li>git commit -m “本次更新的说明”</li><li>git push origin master # 将本地主分支推到远程主分支<br><img src="https://img-blog.csdn.net/20180528224516824" alt></li></ul><h2 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h2><p>查看、添加、提交、删除、找回，重置修改文件</p><p>git help <command> # 显示command的help</p><p>git show # 显示某次提交的内容 git show $id</p><p>git co -<file> # 抛弃工作区修改</file></p><p>git co . # 抛弃工作区修改</p><p>git add <file> # 将工作文件修改提交到本地暂存区</file></p><p>git add . # 将所有修改过的工作文件提交暂存区</p><p>git rm <file> # 从版本库中删除文件</file></p><p>git rm <file> –cached # 从版本库中删除文件，但不删除文件</file></p><p>git reset <file> # 从暂存区恢复到工作文件</file></p><p>git reset -. # 从暂存区恢复到工作文件</p><p>git reset –hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改</p><p>git ci <file> git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做git ci -am “some comments”</file></p><p>git ci –amend # 修改最后一次提交记录</p><p>git revert &lt;$id&gt; # 恢复某次提交的状态，恢复动作本身也创建次提交对象</p><p>git revert HEAD # 恢复最后一次提交的状态</p></li></ol><h2 id="查看文件diff"><a href="#查看文件diff" class="headerlink" title="查看文件diff"></a>查看文件diff</h2><pre><code>-     git diff &lt;file&gt; # 比较当前文件和暂存区文件差异 git diff-      -     git diff &lt;id1&gt;&lt;id2&gt; # 比较两次提交之间的差异-      -     git diff &lt;branch1&gt;..&lt;branch2&gt; # 在两个分支之间比较-      -     git diff --staged # 比较暂存区和版本库差异-      -     git diff --cached # 比较暂存区和版本库差异-      -     git diff --stat # 仅仅比较统计信息</code></pre><h2 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h2><pre><code>-     git log git log &lt;file&gt; # 查看该文件每次提交记录-      -     git log -p &lt;file&gt; # 查看每次详细修改内容的diff-      -     git log -p -2 # 查看最近两次详细修改内容的diff-      -     git log --stat #查看提交统计信息</code></pre><p>tig</p><p><strong>Mac上可以使用tig代替diff和log，brew install tig</strong></p><h2 id="Git-本地分支管理"><a href="#Git-本地分支管理" class="headerlink" title="Git 本地分支管理"></a>Git 本地分支管理</h2><p>查看、切换、创建和删除分支</p><pre><code>-     git br -r # 查看远程分支-      -     git br &lt;new_branch&gt; # 创建新的分支-      -     git br -v # 查看各个分支最后提交信息-      -     git br --merged # 查看已经被合并到当前分支的分支-      -     git br --no-merged # 查看尚未被合并到当前分支的分支-      -     git co &lt;branch&gt; # 切换到某个分支-      -     git co -b &lt;new_branch&gt; # 创建新的分支，并且切换过去-      -     git co -b &lt;new_branch&gt; &lt;branch&gt; # 基于branch创建新的new_branch-      -     git co $id # 把某次历史提交记录checkout出来，但无分支信息，切换到其他分支会自动删除-      -     git co $id -b &lt;new_branch&gt; # 把某次历史提交记录checkout出来，创建成一个分支-      -     git br -d &lt;branch&gt; # 删除某个分支-      -     git br -D &lt;branch&gt; # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)</code></pre><h2 id="分支合并和rebase"><a href="#分支合并和rebase" class="headerlink" title="分支合并和rebase"></a>分支合并和rebase</h2><pre><code>git merge &lt;branch&gt; # 将branch分支合并到当前分支git merge origin/master --no-ff # 不要Fast-Foward合并，这样可以生成merge提交git rebase master &lt;branch&gt; # 将master rebase到branch，相当于： git co &lt;branch&gt; &amp;&amp; git</code></pre><h2 id="Git补丁管理-方便在多台机器上开发同步时用"><a href="#Git补丁管理-方便在多台机器上开发同步时用" class="headerlink" title="Git补丁管理(方便在多台机器上开发同步时用)"></a>Git补丁管理(方便在多台机器上开发同步时用)</h2><pre><code>git diff &gt; ../sync.patch # 生成补丁git apply ../sync.patch # 打补丁git apply --check ../sync.patch #测试补丁能否成功</code></pre><h2 id="Git暂存管理"><a href="#Git暂存管理" class="headerlink" title="Git暂存管理"></a>Git暂存管理</h2><pre><code>git stash # 暂存git stash list # 列所有stashgit stash apply # 恢复暂存的内容git stash drop # 删除暂存区Git远程分支管理git pull # 抓取远程仓库所有分支更新并合并到本地git pull --no-ff # 抓取远程仓库所有分支更新并合并到本地，不要快进合并git fetch origin # 抓取远程仓库更新git merge origin/master # 将远程主分支合并到本地当前分支git co --track origin/branch # 跟踪某个远程分支创建相应的本地分支git co -b &lt;local_branch&gt; origin/&lt;remote_branch&gt; # 基于远程分支创建本地分支，功能同上</code></pre><h2 id="git-push-push所有分支"><a href="#git-push-push所有分支" class="headerlink" title="git push # push所有分支"></a>git push # push所有分支</h2><pre><code>git push origin master # 将本地主分支推到远程主分支git push -u origin master # 将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)git push origin &lt;local_branch&gt; # 创建远程分支， origin是远程仓库名git push origin &lt;local_branch&gt;:&lt;remote_branch&gt; # 创建远程分支git push origin :&lt;remote_branch&gt; #先删除本地分支(git br -d &lt;branch&gt;)，然后再push删除远程分支</code></pre><h2 id="Git远程仓库管理"><a href="#Git远程仓库管理" class="headerlink" title="Git远程仓库管理"></a>Git远程仓库管理</h2><pre><code>git remote -v # 查看远程服务器地址和仓库名称git remote show origin # 查看远程服务器仓库状态git remote add origin git@ github:robbin/robbin_site.git # 添加远程仓库地址git remote set-url origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地址</code></pre><h2 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h2><pre><code>git clone --bare robbin_site robbin_site.git # 用带版本的项目创建纯版本仓库scp -r my_project.git git@ git.csdn.net:~ # 将纯仓库上传到服务器上mkdir robbin_site.git &amp;&amp; cd robbin_site.git &amp;&amp; git --bare init # 在服务器创建纯仓库git remote add origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地址git push -u origin master # 客户端首次提交git push -u origin develop # 首次将本地develop分支提交到远程develop分支，并且trackgit remote set-head origin master # 设置远程仓库的HEAD指向master分支</code></pre><p><strong>也可以命令设置跟踪远程库和本地库</strong></p><pre><code>git branch --set-upstream master origin/mastergit branch --set-upstream develop origin/develop</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用github部署网站</title>
+      <link href="/2018/04/23/shi-yong-github-bu-shu-wang-zhan/"/>
+      <url>/2018/04/23/shi-yong-github-bu-shu-wang-zhan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用GitHub部署网站"><a href="#使用GitHub部署网站" class="headerlink" title="使用GitHub部署网站"></a>使用GitHub部署网站</h1><p><strong>在部署网站之前，先要有一个GitHub账号，熟悉一些git命令，注册GitHub账号和使用git命令可以参考下面的博客，在博客中介绍的非常详细，我也不做过多的介绍</strong></p><hr>从0开始学习GitHub系列汇总：[http://pan.baidu.com/s/1hsn57YO](http://pan.baidu.com/s/1hsn57YO)<p>注册好GitHub账号并且完善用户信息后可以得到一个下图所示的界面，下图是我的GitHub界面，其中界面中的信息介绍可以参考，<code>从0开始学习 GITHUB 系列之「加入 GITHUB」</code>这篇博客对GitHub界面的信息介绍的非常详细</p><p><img src="https://i.imgur.com/rnbszof.png" alt></p><p>在GitHub上部署网站：</p><p><strong>第一步</strong>：单击Repositories，其中Repositories在GitHub上表示的是仓库，在GitHub上每个项目都存放在仓库里，一个仓库保存一个项目<br><img src="https://i.imgur.com/pPjslYS.jpg" alt></p><p><strong>第二步</strong>：单击根据图中的提示填写信息，信息填写完成后单击Create respository按钮创建仓库<br><img src="https://i.imgur.com/zjbd2WZ.jpg" alt></p><p><strong>第三步</strong>：单击创建好仓库后会自动跳转到下图所示的界面，在界面中单击Settings<br><img src="https://i.imgur.com/KdK0YwY.jpg" alt></p><p><strong>第四步</strong>：提示在下面的操作中需要电脑中安装了git，并且熟悉几个简单的git命令，关于git的安装以及git命令的使用可以参考<code>从0开始学习 GITHUB 系列之「GIT 速成」</code>，这篇博客将git介绍的非常通俗易懂，安装好git后，先在电脑中创建一个文件夹用于保存从Github中克隆下来的仓库，我建的文件夹叫做demo，在d:\Git路径下，打开命令行进入demo文件夹下<br><img src="https://i.imgur.com/T8eLnrI.png" alt><br><strong>第五步</strong>在 命令行中执行<code>https://github.com/leblog/test.git</code>命令</p><p>其中<code>git clone</code>表示要克隆一个项目，后面的<code>https://github.com/leblog/test.git</code>表示项目地址，该地址是由第十二步操作获得的，当在最后一行出现了100%表示，远程仓库已经成功的克隆到了本地<br><img src="https://i.imgur.com/OIRdznD.png" alt><br><strong>第六步</strong>：打开demo文件夹，可以看到在文件夹中多了一个test文件，该文件正是刚刚在GitHub中创建的仓库</p><p><img src="https://i.imgur.com/UnaGLvt.png" alt><br><strong>第七步</strong>：打开文件，并且将需要上传到GitHub上的网站添加到该文件中<br><img src="https://i.imgur.com/6nWYnck.png" alt><br><strong>第八步</strong>：打开命令行，并且进入test文件夹下，并且执行 <code>git add .</code>命令，此命令表示将需要提交到git中的文件先添加到缓存<br><img src="https://i.imgur.com/N5bRudR.png" alt><br><strong>第九步</strong>：执行 <code>git commit -m &quot;first commit .&quot;</code>，此命令表示将文件提交到git中，下面显示的都是提交到git中的文件</p><p><img src="https://i.imgur.com/dopR8lM.png" alt><br><strong>第十步</strong>：执行<code>git push origin master</code>命令，将文件<code>push</code>到GitHub上的master分支上，当出现下图所示的提示信息时，表示网站已经成功的提交到了GitHub上<br><img src="https://i.imgur.com/yM8aV3c.png" alt><br><strong>第十一步</strong>：回到Github上的test仓库，可以看到文件已经全部提交上来了</p><hr>通过观察网址可知，网址的格式为 https:// + GitHub的用户名 + .github.io/ + 仓库的名称<p><img src="https://i.imgur.com/xhbPnpJ.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JUint单元测试</title>
       <link href="/2018/04/12/juint-dan-yuan-ce-shi/"/>
       <url>/2018/04/12/juint-dan-yuan-ce-shi/</url>
