@@ -294,7 +294,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -550,9 +550,8 @@
 
 git merge origin/master --no-ff # 不要Fast-Foward合并，这样可以生成merge提交
 
-git rebase master &lt;branch&gt; # 将master rebase到branch，相当于： git co &lt;branch&gt; &amp;&amp; git</code></pre><h2 id="Git补丁管理-方便在多台机器上开发同步时用"><a href="#Git补丁管理-方便在多台机器上开发同步时用" class="headerlink" title="Git补丁管理(方便在多台机器上开发同步时用)"></a>Git补丁管理(方便在多台机器上开发同步时用)</h2><pre><code>git diff &gt; ../sync.patch # 生成补丁
-
-git apply ../sync.patch # 打补丁
+git rebase master &lt;branch&gt; # 将master rebase到branch，相当于： git co &lt;branch&gt; &amp;&amp; git</code></pre><h2 id="Git补丁管理"><a href="#Git补丁管理" class="headerlink" title="Git补丁管理"></a>Git补丁管理</h2><p>(方便在多台机器上开发同步时用)<br>    git diff &gt; ../sync.patch # 生成补丁</p>
+<pre><code>git apply ../sync.patch # 打补丁
 
 git apply --check ../sync.patch #测试补丁能否成功</code></pre><h2 id="Git暂存管理"><a href="#Git暂存管理" class="headerlink" title="Git暂存管理"></a>Git暂存管理</h2><pre><code>git stash # 暂存
 
@@ -574,7 +573,7 @@ git merge origin/master # 将远程主分支合并到本地当前分支
 
 git co --track origin/branch # 跟踪某个远程分支创建相应的本地分支
 
-git co -b &lt;local_branch&gt; origin/&lt;remote_branch&gt; # 基于远程分支创建本地分支，功能同上</code></pre><h2 id="git-push-push所有分支"><a href="#git-push-push所有分支" class="headerlink" title="git push # push所有分支"></a>git push # push所有分支</h2><pre><code>git push origin master # 将本地主分支推到远程主分支
+git co -b &lt;local_branch&gt; origin/&lt;remote_branch&gt; # 基于远程分支创建本地分支，功能同上</code></pre><h2 id="git-push-push所有分支"><a href="#git-push-push所有分支" class="headerlink" title="git push (push所有分支)"></a>git push (push所有分支)</h2><pre><code>git push origin master # 将本地主分支推到远程主分支
 
 git push -u origin master # 将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)
 
@@ -1095,7 +1094,7 @@ git branch --set-upstream develop origin/develop</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="ubuntu与centos的区别">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="ubuntu与centos的区别">
                         
                         <span class="card-title">ubuntu与centos的区别</span>
                     </div>
@@ -1155,7 +1154,7 @@ git branch --set-upstream develop origin/develop</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="使用github部署网站">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="使用github部署网站">
                         
                         <span class="card-title">使用github部署网站</span>
                     </div>
@@ -1352,7 +1351,7 @@ git branch --set-upstream develop origin/develop</code></pre>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">11.4k</span>
+            <span class="white-color">15.8k</span>
             
 
             <br>
