@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leblog.github.io/"/>
-  <updated>2019-10-24T13:23:33.200Z</updated>
+  <updated>2019-11-02T13:46:04.432Z</updated>
   <id>https://leblog.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于intelij IDEA2019.2的使用教程</title>
+    <link href="https://leblog.github.io/2019/11/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/"/>
+    <id>https://leblog.github.io/2019/11/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/</id>
+    <published>2019-11-02T13:43:03.000Z</published>
+    <updated>2019-11-02T13:46:04.432Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="IDEA" scheme="https://leblog.github.io/categories/IDEA/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Intelij IDEA" scheme="https://leblog.github.io/tags/Intelij-IDEA/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里巴巴Java方向面试题汇总（含答案）</title>
