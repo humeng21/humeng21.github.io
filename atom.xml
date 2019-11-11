@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leblog.github.io/"/>
-  <updated>2019-11-02T13:46:04.432Z</updated>
+  <updated>2019-11-11T11:28:11.385Z</updated>
   <id>https://leblog.github.io/</id>
   
   <author>
@@ -17,11 +17,267 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JAVA小知识总结</title>
+    <link href="https://leblog.github.io/2018/07/21/java-xiao-zhi-shi-zong-jie/"/>
+    <id>https://leblog.github.io/2018/07/21/java-xiao-zhi-shi-zong-jie/</id>
+    <published>2018-07-21T11:26:40.000Z</published>
+    <updated>2019-11-11T11:28:11.385Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;equals-与-的区别&quot;&gt;&lt;a href=&quot;#equals-与-的区别&quot; class=&quot;headerlink&quot; title=&quot;equals 与 == 的区别&quot;&gt;&lt;/a&gt;equals 与 ==
+        
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 请求的 GET 与 POST 方式的区别</title>
+    <link href="https://leblog.github.io/2018/07/16/http-qing-qiu-de-get-yu-post-fang-shi-de-qu-bie/"/>
+    <id>https://leblog.github.io/2018/07/16/http-qing-qiu-de-get-yu-post-fang-shi-de-qu-bie/</id>
+    <published>2018-07-16T11:04:56.000Z</published>
+    <updated>2019-11-11T11:09:02.641Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTTP-请求的-GET-与-POST-方式的区别&quot;&gt;&lt;a href=&quot;#HTTP-请求的-GET-与-POST-方式的区别&quot; class=&quot;headerlink&quot; title=&quot;HTTP 请求的 GET 与 POST 方式的区别&quot;&gt;&lt;/a&gt;HTTP 请求的
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="小知识" scheme="https://leblog.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JDK8的新特性</title>
+    <link href="https://leblog.github.io/2018/07/09/hexo-jdk8-de-xin-te-xing/"/>
+    <id>https://leblog.github.io/2018/07/09/hexo-jdk8-de-xin-te-xing/</id>
+    <published>2018-07-09T10:51:57.000Z</published>
+    <updated>2019-11-11T11:24:54.830Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JDK8-新特性&quot;&gt;&lt;a href=&quot;#JDK8-新特性&quot; class=&quot;headerlink&quot; title=&quot;JDK8 新特性&quot;&gt;&lt;/a&gt;JDK8 新特性&lt;/h1&gt;&lt;p&gt;以下列出两点重要特性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Lambda
+        
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
+    
+      <category term="Jdk" scheme="https://leblog.github.io/tags/Jdk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 博客部署到腾讯云教程</title>
+    <link href="https://leblog.github.io/2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/"/>
+    <id>https://leblog.github.io/2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/</id>
+    <published>2018-07-03T10:33:42.000Z</published>
+    <updated>2019-11-11T10:39:13.901Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;本文首发于我的个人博客：&lt;a href=&quot;leblog.github.io&quot;&gt;乐乐的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文章链接：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="https://leblog.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="教程" scheme="https://leblog.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>log4j的使用</title>
+    <link href="https://leblog.github.io/2018/06/11/log4j-de-shi-yong/"/>
+    <id>https://leblog.github.io/2018/06/11/log4j-de-shi-yong/</id>
+    <published>2018-06-11T10:30:37.000Z</published>
+    <updated>2019-11-11T10:39:25.822Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;一个完整的软件，日志是必不可少的。程序从开发、测试、维护、运行等环节，都需要向控制台或文件等位置输出大量信息。这些信息的输出，
+        
+      
+    
+    </summary>
+    
+      <category term="log4j" scheme="https://leblog.github.io/categories/log4j/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="log4j" scheme="https://leblog.github.io/tags/log4j/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高内聚低耦合</title>
+    <link href="https://leblog.github.io/2018/06/01/gao-nei-ju-di-ou-he/"/>
+    <id>https://leblog.github.io/2018/06/01/gao-nei-ju-di-ou-he/</id>
+    <published>2018-06-01T10:28:40.000Z</published>
+    <updated>2019-11-11T10:40:09.584Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;随笔：&lt;br&gt;视图层&lt;br&gt;业务逻辑层 service&lt;br&gt;数据访问层 Dao
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://leblog.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://leblog.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是MVC模式</title>
+    <link href="https://leblog.github.io/2018/05/16/shi-me-shi-mvc-mo-shi/"/>
+    <id>https://leblog.github.io/2018/05/16/shi-me-shi-mvc-mo-shi/</id>
+    <published>2018-05-16T10:25:28.000Z</published>
+    <updated>2019-11-11T10:39:40.396Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;MVC，即 Model 模型、View 视图，及 Controller
+        
+      
+    
+    </summary>
+    
+      <category term="MVC模式" scheme="https://leblog.github.io/categories/MVC%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="MVC模式" scheme="https://leblog.github.io/tags/MVC%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是三层架构</title>
+    <link href="https://leblog.github.io/2018/05/11/shi-me-shi-san-ceng-jia-gou/"/>
+    <id>https://leblog.github.io/2018/05/11/shi-me-shi-san-ceng-jia-gou/</id>
+    <published>2018-05-11T10:22:45.000Z</published>
+    <updated>2019-11-11T10:39:45.921Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是系统架构&quot;&gt;&lt;a href=&quot;#什么是系统架构&quot; class=&quot;headerlink&quot; title=&quot;什么是系统架构&quot;&gt;&lt;/a&gt;什么是系统架构&lt;/h1&gt;&lt;p&gt;所谓系统架构是指，整合应用系统程序大的结构。经常提到的系统结构有两种：三层架构与
+        
+      
+    
+    </summary>
+    
+      <category term="架构" scheme="https://leblog.github.io/categories/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="架构" scheme="https://leblog.github.io/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring框架</title>
+    <link href="https://leblog.github.io/2018/05/05/spring-kuang-jia/"/>
+    <id>https://leblog.github.io/2018/05/05/spring-kuang-jia/</id>
+    <published>2018-05-05T10:20:04.000Z</published>
+    <updated>2019-11-11T10:39:31.396Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;Spring 的主要作用就是为代码“解耦”，降低代码间的耦合度。&lt;/p&gt;
+&lt;p&gt;根据功能的不同，可以将一个系统中的代码分为
+        
+      
+    
+    </summary>
+    
+      <category term="Spring" scheme="https://leblog.github.io/categories/Spring/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Spring" scheme="https://leblog.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于intelij IDEA2019.2的使用教程</title>
-    <link href="https://leblog.github.io/2019/11/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/"/>
-    <id>https://leblog.github.io/2019/11/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/</id>
-    <published>2019-11-02T13:43:03.000Z</published>
-    <updated>2019-11-02T13:46:04.432Z</updated>
+    <link href="https://leblog.github.io/2018/05/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/"/>
+    <id>https://leblog.github.io/2018/05/02/guan-yu-intelij-idea2019-2-de-shi-yong-jiao-cheng/</id>
+    <published>2018-05-02T13:43:03.000Z</published>
+    <updated>2019-11-11T10:39:53.274Z</updated>
     
     <summary type="html">
     
@@ -46,10 +302,10 @@
   
   <entry>
     <title>阿里巴巴Java方向面试题汇总（含答案）</title>
-    <link href="https://leblog.github.io/2019/05/01/a-li-ba-ba-java-fang-xiang-mian-shi-ti-hui-zong-han-da-an/"/>
-    <id>https://leblog.github.io/2019/05/01/a-li-ba-ba-java-fang-xiang-mian-shi-ti-hui-zong-han-da-an/</id>
-    <published>2019-05-01T13:21:54.000Z</published>
-    <updated>2019-10-24T13:23:33.200Z</updated>
+    <link href="https://leblog.github.io/2018/05/01/a-li-ba-ba-java-fang-xiang-mian-shi-ti-hui-zong-han-da-an/"/>
+    <id>https://leblog.github.io/2018/05/01/a-li-ba-ba-java-fang-xiang-mian-shi-ti-hui-zong-han-da-an/</id>
+    <published>2018-05-01T13:21:54.000Z</published>
+    <updated>2019-11-11T11:24:35.426Z</updated>
     
     <summary type="html">
     
@@ -63,98 +319,12 @@
     
     </summary>
     
-      <category term="Java" scheme="https://leblog.github.io/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://leblog.github.io/tags/Java/"/>
-    
-      <category term="面试" scheme="https://leblog.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试知识浅谈</title>
-    <link href="https://leblog.github.io/2019/04/12/ce-shi-zhi-shi-qian-tan/"/>
-    <id>https://leblog.github.io/2019/04/12/ce-shi-zhi-shi-qian-tan/</id>
-    <published>2019-04-12T11:02:54.000Z</published>
-    <updated>2019-10-22T11:44:11.819Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;TDD测试&quot;&gt;&lt;a href=&quot;#TDD测试&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
       <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
     
     
-      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
+      <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
     
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="软件测试" scheme="https://leblog.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VMware Workstation Pro 15下载</title>
-    <link href="https://leblog.github.io/2019/03/18/vmware-workstation-pro-15-xia-zai/"/>
-    <id>https://leblog.github.io/2019/03/18/vmware-workstation-pro-15-xia-zai/</id>
-    <published>2019-03-18T07:55:40.000Z</published>
-    <updated>2019-10-16T08:10:20.667Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Windows平台最强虚拟机软件已经更新到了VM15-版本了，VMware-Workstation-Pro-15-全面进行了改造重新制作了UI界面及LOGO图标，VMware-Workstation-允许操作系统和应用程序在一台虚拟机内部运行。&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="资源" scheme="https://leblog.github.io/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="资源" scheme="https://leblog.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu与centos的区别</title>
-    <link href="https://leblog.github.io/2019/03/16/ubuntu-yu-centos-de-qu-bie/"/>
-    <id>https://leblog.github.io/2019/03/16/ubuntu-yu-centos-de-qu-bie/</id>
-    <published>2019-03-16T07:43:54.000Z</published>
-    <updated>2019-10-16T08:10:35.349Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ubuntu与centos的区别&quot;&gt;&lt;a href=&quot;#ubuntu与centos的区别&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
-    
-      <category term="ubuntu" scheme="https://leblog.github.io/tags/ubuntu/"/>
-    
-      <category term="centos" scheme="https://leblog.github.io/tags/centos/"/>
+      <category term="面试" scheme="https://leblog.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
@@ -215,11 +385,41 @@
   </entry>
   
   <entry>
+    <title>测试知识浅谈</title>
+    <link href="https://leblog.github.io/2018/04/12/ce-shi-zhi-shi-qian-tan/"/>
+    <id>https://leblog.github.io/2018/04/12/ce-shi-zhi-shi-qian-tan/</id>
+    <published>2018-04-12T11:02:54.000Z</published>
+    <updated>2019-11-11T10:39:59.208Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;TDD测试&quot;&gt;&lt;a href=&quot;#TDD测试&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
+    
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
+    
+      <category term="软件测试" scheme="https://leblog.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JUint单元测试</title>
     <link href="https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/"/>
     <id>https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/</id>
     <published>2018-04-12T10:59:46.000Z</published>
-    <updated>2019-10-22T11:05:10.123Z</updated>
+    <updated>2019-11-11T10:39:19.752Z</updated>
     
     <summary type="html">
     
@@ -237,11 +437,11 @@
       <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
     
     
-      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
-    
       <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
       <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
+    
+      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
     
   </entry>
   
@@ -250,7 +450,7 @@
     <link href="https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/"/>
     <id>https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/</id>
     <published>2018-04-03T02:47:26.000Z</published>
-    <updated>2019-10-22T11:02:20.256Z</updated>
+    <updated>2019-11-11T10:39:03.890Z</updated>
     
     <summary type="html">
     
@@ -270,6 +470,62 @@
       <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
       <category term="bootstrap" scheme="https://leblog.github.io/tags/bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VMware Workstation Pro 15下载</title>
+    <link href="https://leblog.github.io/2018/03/18/vmware-workstation-pro-15-xia-zai/"/>
+    <id>https://leblog.github.io/2018/03/18/vmware-workstation-pro-15-xia-zai/</id>
+    <published>2018-03-18T07:55:40.000Z</published>
+    <updated>2019-11-11T10:38:20.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Windows平台最强虚拟机软件已经更新到了VM15-版本了，VMware-Workstation-Pro-15-全面进行了改造重新制作了UI界面及LOGO图标，VMware-Workstation-允许操作系统和应用程序在一台虚拟机内部运行。&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="https://leblog.github.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="资源" scheme="https://leblog.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu与centos的区别</title>
+    <link href="https://leblog.github.io/2018/03/16/ubuntu-yu-centos-de-qu-bie/"/>
+    <id>https://leblog.github.io/2018/03/16/ubuntu-yu-centos-de-qu-bie/</id>
+    <published>2018-03-16T07:43:54.000Z</published>
+    <updated>2019-11-11T10:38:25.736Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ubuntu与centos的区别&quot;&gt;&lt;a href=&quot;#ubuntu与centos的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="ubuntu" scheme="https://leblog.github.io/tags/ubuntu/"/>
+    
+      <category term="centos" scheme="https://leblog.github.io/tags/centos/"/>
     
   </entry>
   
@@ -307,7 +563,7 @@
     <link href="https://leblog.github.io/2018/03/10/2018-leblog/"/>
     <id>https://leblog.github.io/2018/03/10/2018-leblog/</id>
     <published>2018-03-10T15:08:34.000Z</published>
-    <updated>2019-10-16T08:10:41.925Z</updated>
+    <updated>2019-11-11T10:38:52.608Z</updated>
     
     <summary type="html">
     
