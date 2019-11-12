@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leblog.github.io/"/>
-  <updated>2019-11-11T11:28:11.385Z</updated>
+  <updated>2019-11-12T04:23:11.339Z</updated>
   <id>https://leblog.github.io/</id>
   
   <author>
@@ -15,6 +15,258 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 用户和组管理</title>
+    <link href="https://leblog.github.io/2019/11/12/linux-yong-hu-he-zu-guan-li/"/>
+    <id>https://leblog.github.io/2019/11/12/linux-yong-hu-he-zu-guan-li/</id>
+    <published>2019-11-12T04:22:37.000Z</published>
+    <updated>2019-11-12T04:23:11.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-用户和组管理&quot;&gt;&lt;a href=&quot;#Linux-用户和组管理&quot; class=&quot;headerlink&quot; title=&quot;Linux 用户和组管理&quot;&gt;&lt;/a&gt;Linux 用户和组管理&lt;/h1&gt;&lt;p&gt;Linux
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="教程" scheme="https://leblog.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux LVM 磁盘扩容</title>
+    <link href="https://leblog.github.io/2019/08/16/linux-lvm-ci-pan-kuo-rong/"/>
+    <id>https://leblog.github.io/2019/08/16/linux-lvm-ci-pan-kuo-rong/</id>
+    <published>2019-08-16T04:29:32.000Z</published>
+    <updated>2019-11-12T04:30:14.188Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;LVM-的基本概念&quot;&gt;&lt;a href=&quot;#LVM-的基本概念&quot; class=&quot;headerlink&quot; title=&quot;LVM 的基本概念&quot;&gt;&lt;/a&gt;LVM 的基本概念&lt;/h1&gt;&lt;h3 id=&quot;物理卷-Physical-volume-PV&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 安装 MySQL</title>
+    <link href="https://leblog.github.io/2019/08/12/linux-an-zhuang-mysql/"/>
+    <id>https://leblog.github.io/2019/08/12/linux-an-zhuang-mysql/</id>
+    <published>2019-08-12T04:28:30.000Z</published>
+    <updated>2019-11-12T04:29:07.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-安装-MySQL&quot;&gt;&lt;a href=&quot;#Linux-安装-MySQL&quot; class=&quot;headerlink&quot; title=&quot;Linux 安装 MySQL&quot;&gt;&lt;/a&gt;Linux 安装 MySQL&lt;/h1&gt;&lt;h3 id=&quot;更新数据源&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="MySql" scheme="https://leblog.github.io/tags/MySql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 安装 Tomcat</title>
+    <link href="https://leblog.github.io/2019/08/12/linux-an-zhuang-tomcat/"/>
+    <id>https://leblog.github.io/2019/08/12/linux-an-zhuang-tomcat/</id>
+    <published>2019-08-12T04:27:04.000Z</published>
+    <updated>2019-11-12T04:28:01.183Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-安装-Tomcat&quot;&gt;&lt;a href=&quot;#Linux-安装-Tomcat&quot; class=&quot;headerlink&quot; title=&quot;Linux 安装 Tomcat&quot;&gt;&lt;/a&gt;Linux 安装 Tomcat&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;此处以
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="Tomcat" scheme="https://leblog.github.io/tags/Tomcat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 安装 Java</title>
+    <link href="https://leblog.github.io/2019/08/12/linux-an-zhuang-java/"/>
+    <id>https://leblog.github.io/2019/08/12/linux-an-zhuang-java/</id>
+    <published>2019-08-12T04:24:42.000Z</published>
+    <updated>2019-11-12T04:26:03.610Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;此处以 JDK 1.8.0_152 为例&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;解压缩并移动到指定目录&quot;&gt;&lt;a href=&quot;#解压缩并移动到指定目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="教程" scheme="https://leblog.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux软件包管理</title>
+    <link href="https://leblog.github.io/2019/08/05/linux-ruan-jian-bao-guan-li/"/>
+    <id>https://leblog.github.io/2019/08/05/linux-ruan-jian-bao-guan-li/</id>
+    <published>2019-08-05T04:21:18.000Z</published>
+    <updated>2019-11-12T04:22:13.271Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-软件包管理&quot;&gt;&lt;a href=&quot;#Linux-软件包管理&quot; class=&quot;headerlink&quot; title=&quot;Linux 软件包管理&quot;&gt;&lt;/a&gt;Linux 软件包管理&lt;/h1&gt;&lt;p&gt;APT(Advanced Packaging Tool) 是
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="Xshell" scheme="https://leblog.github.io/tags/Xshell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 文件权限管理</title>
+    <link href="https://leblog.github.io/2018/08/07/linux-wen-jian-quan-xian-guan-li/"/>
+    <id>https://leblog.github.io/2018/08/07/linux-wen-jian-quan-xian-guan-li/</id>
+    <published>2018-08-07T04:23:33.000Z</published>
+    <updated>2019-11-12T04:26:13.707Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-文件权限管理&quot;&gt;&lt;a href=&quot;#Linux-文件权限管理&quot; class=&quot;headerlink&quot; title=&quot;Linux 文件权限管理&quot;&gt;&lt;/a&gt;Linux 文件权限管理&lt;/h1&gt;&lt;h3 id=&quot;查看文件和目录的权限&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>详细的Linux基本操作</title>
+    <link href="https://leblog.github.io/2018/08/02/linux-yuan-cheng-kong-zhi-guan-li/"/>
+    <id>https://leblog.github.io/2018/08/02/linux-yuan-cheng-kong-zhi-guan-li/</id>
+    <published>2018-08-02T04:17:10.000Z</published>
+    <updated>2019-11-12T04:30:46.142Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux-远程控制管理&quot;&gt;&lt;a href=&quot;#Linux-远程控制管理&quot; class=&quot;headerlink&quot; title=&quot;Linux 远程控制管理&quot;&gt;&lt;/a&gt;Linux 远程控制管理&lt;/h1&gt;&lt;p&gt;传统的网络服务程序，FTP、POP、telnet
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+      <category term="Xshell" scheme="https://leblog.github.io/tags/Xshell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux简介</title>
+    <link href="https://leblog.github.io/2018/08/01/linux-jian-jie/"/>
+    <id>https://leblog.github.io/2018/08/01/linux-jian-jie/</id>
+    <published>2018-08-01T04:09:37.000Z</published>
+    <updated>2019-11-12T04:18:19.671Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot; class=&quot;headerlink&quot; title=&quot;Linux&quot;&gt;&lt;/a&gt;Linux&lt;/h1&gt;&lt;p&gt;Linux 是一种自由和开放源码的类 UNIX 操作系统，使用 &lt;code&gt;Linux
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
+    
+    
+      <category term="教程" scheme="https://leblog.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA小知识总结</title>
@@ -125,9 +377,9 @@
       <category term="教程" scheme="https://leblog.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="教程" scheme="https://leblog.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -325,264 +577,6 @@
       <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
     
       <category term="面试" scheme="https://leblog.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何把更新后的项目重新传到github上</title>
-    <link href="https://leblog.github.io/2018/04/23/ru-he-ba-geng-xin-hou-de-xiang-mu-chong-xin-chuan-dao-github-shang/"/>
-    <id>https://leblog.github.io/2018/04/23/ru-he-ba-geng-xin-hou-de-xiang-mu-chong-xin-chuan-dao-github-shang/</id>
-    <published>2018-04-23T15:32:40.000Z</published>
-    <updated>2019-10-24T13:23:22.468Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;以后更新项目基本上就是使用下面这几条命令就行：&quot;&gt;&lt;a href=&quot;#以后更新项目基本上就是使用下面这几条命令就行：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Github" scheme="https://leblog.github.io/categories/Github/"/>
-    
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Github" scheme="https://leblog.github.io/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用github部署网站</title>
-    <link href="https://leblog.github.io/2018/04/23/shi-yong-github-bu-shu-wang-zhan/"/>
-    <id>https://leblog.github.io/2018/04/23/shi-yong-github-bu-shu-wang-zhan/</id>
-    <published>2018-04-23T15:30:52.000Z</published>
-    <updated>2019-10-23T15:43:22.343Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;使用GitHub部署网站&quot;&gt;&lt;a href=&quot;#使用GitHub部署网站&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Github" scheme="https://leblog.github.io/categories/Github/"/>
-    
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Github" scheme="https://leblog.github.io/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试知识浅谈</title>
-    <link href="https://leblog.github.io/2018/04/12/ce-shi-zhi-shi-qian-tan/"/>
-    <id>https://leblog.github.io/2018/04/12/ce-shi-zhi-shi-qian-tan/</id>
-    <published>2018-04-12T11:02:54.000Z</published>
-    <updated>2019-11-11T10:39:59.208Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;TDD测试&quot;&gt;&lt;a href=&quot;#TDD测试&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
-    
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
-    
-      <category term="软件测试" scheme="https://leblog.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JUint单元测试</title>
-    <link href="https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/"/>
-    <id>https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/</id>
-    <published>2018-04-12T10:59:46.000Z</published>
-    <updated>2019-11-11T10:39:19.752Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;JUnit 是用于编写和运行可重复的自动化测试的开源测试框架，这样可以保证我们的代码按预期工作。&lt;/p&gt;
-&lt;p&gt;JUnit
-        
-      
-    
-    </summary>
-    
-      <category term="JAVA" scheme="https://leblog.github.io/categories/JAVA/"/>
-    
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="JAVA" scheme="https://leblog.github.io/tags/JAVA/"/>
-    
-      <category term="JUint" scheme="https://leblog.github.io/tags/JUint/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bootstrap之网格系统</title>
-    <link href="https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/"/>
-    <id>https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/</id>
-    <published>2018-04-03T02:47:26.000Z</published>
-    <updated>2019-11-11T10:39:03.890Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Bootstrap网格系统&quot;&gt;&lt;a href=&quot;#Bootstrap网格系统&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap网格系统&quot;&gt;&lt;/a&gt;Bootstrap网格系统&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Bootstrap
-        
-      
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="学习笔记" scheme="https://leblog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="bootstrap" scheme="https://leblog.github.io/tags/bootstrap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VMware Workstation Pro 15下载</title>
-    <link href="https://leblog.github.io/2018/03/18/vmware-workstation-pro-15-xia-zai/"/>
-    <id>https://leblog.github.io/2018/03/18/vmware-workstation-pro-15-xia-zai/</id>
-    <published>2018-03-18T07:55:40.000Z</published>
-    <updated>2019-11-11T10:38:20.769Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Windows平台最强虚拟机软件已经更新到了VM15-版本了，VMware-Workstation-Pro-15-全面进行了改造重新制作了UI界面及LOGO图标，VMware-Workstation-允许操作系统和应用程序在一台虚拟机内部运行。&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="资源" scheme="https://leblog.github.io/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="资源" scheme="https://leblog.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu与centos的区别</title>
-    <link href="https://leblog.github.io/2018/03/16/ubuntu-yu-centos-de-qu-bie/"/>
-    <id>https://leblog.github.io/2018/03/16/ubuntu-yu-centos-de-qu-bie/</id>
-    <published>2018-03-16T07:43:54.000Z</published>
-    <updated>2019-11-11T10:38:25.736Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ubuntu与centos的区别&quot;&gt;&lt;a href=&quot;#ubuntu与centos的区别&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://leblog.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://leblog.github.io/tags/Linux/"/>
-    
-      <category term="ubuntu" scheme="https://leblog.github.io/tags/ubuntu/"/>
-    
-      <category term="centos" scheme="https://leblog.github.io/tags/centos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git page搭建个人博客教程</title>
-    <link href="https://leblog.github.io/2018/03/11/hexo-github-1/"/>
-    <id>https://leblog.github.io/2018/03/11/hexo-github-1/</id>
-    <published>2018-03-11T06:30:18.000Z</published>
-    <updated>2019-10-16T08:10:26.928Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;有任何问题请联系我扣扣：1260842695，vx：szhll5201314，24小时随时在线哦&lt;br&gt;如果觉得有用的话可以看心情打赏一杯奶茶，我会很开心哒。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;我的博客源代码地址&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="博客" scheme="https://leblog.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="博客" scheme="https://leblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么说程序员都应该写一写博客</title>
-    <link href="https://leblog.github.io/2018/03/10/2018-leblog/"/>
-    <id>https://leblog.github.io/2018/03/10/2018-leblog/</id>
-    <published>2018-03-10T15:08:34.000Z</published>
-    <updated>2019-11-11T10:38:52.608Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="博客" scheme="https://leblog.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="随笔" scheme="https://leblog.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="博客" scheme="https://leblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
