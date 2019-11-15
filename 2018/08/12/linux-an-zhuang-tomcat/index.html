@@ -4,11 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux 安装 MySQL,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Linux 安装 Tomcat,  乐乐 lele 自然语言处理 深度学习">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="Linux 安装 MySQL更新数据源apt-get update安装 MySQLapt-get install mysql-server系统将提示您在安装过程中创建 root 密码。选择一个安全的密码，并确保你记住它，因为你以后需要它。接">
+    <meta name="description" content="Linux 安装 Tomcat
+此处以 Tomcat 8.5.23 为例
+
+下载地址https://tomcat.apache.org/
+解压缩并移动到指定目录解压缩tar -zxvf apache-tomcat-8.5.23.tar.gz">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Linux 安装 MySQL | 乐乐的博客</title>
+    <title>Linux 安装 Tomcat | 乐乐的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -290,13 +294,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Linux 安装 MySQL
+                        Linux 安装 Tomcat
                     </div>
                 </div>
             </div>
@@ -411,8 +415,8 @@
                             <span class="chip bg-color">Linux</span>
                         </a>
                         
-                        <a href="/tags/MySql/" target="_blank">
-                            <span class="chip bg-color">MySql</span>
+                        <a href="/tags/Tomcat/" target="_blank">
+                            <span class="chip bg-color">Tomcat</span>
                         </a>
                         
                     </div>
@@ -435,7 +439,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-12
+                    2018-08-12
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -449,14 +453,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    595
+                    91
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
                 
@@ -472,39 +476,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Linux-安装-MySQL"><a href="#Linux-安装-MySQL" class="headerlink" title="Linux 安装 MySQL"></a>Linux 安装 MySQL</h1><h3 id="更新数据源"><a href="#更新数据源" class="headerlink" title="更新数据源"></a>更新数据源</h3><pre><code>apt-get update</code></pre><h3 id="安装-MySQL"><a href="#安装-MySQL" class="headerlink" title="安装 MySQL"></a>安装 MySQL</h3><pre><code>apt-get install mysql-server</code></pre><p>系统将提示您在安装过程中创建 root 密码。选择一个安全的密码，并确保你记住它，因为你以后需要它。接下来，我们将完成 MySQL 的配置。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>因为是全新安装，您需要运行附带的安全脚本。这会更改一些不太安全的默认选项，例如远程 root 登录和示例用户。在旧版本的 MySQL 上，您需要手动初始化数据目录，但 Mysql 5.7 已经自动完成了。</p>
-<p>运行安全脚本：</p>
-<pre><code>mysql_secure_installation</code></pre><p>这将提示您输入您在之前步骤中创建的 root 密码。您可以按 Y，然后 ENTER 接受所有后续问题的默认值，但是要询问您是否要更改 root 密码。您只需在之前步骤中进行设置即可，因此无需现在更改。</p>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>按上边方式安装完成后，MySQL 应该已经开始自动运行了。要测试它，请检查其状态。</p>
-<pre><code>lusifer@ubuntu:~$ systemctl status mysql.service
-● mysql.service - MySQL Community Server
-   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
-   Active: active (running) since Tue 2017-11-21 13:04:34 CST; 3min 24s ago
- Main PID: 2169 (mysqld)
-   CGroup: /system.slice/mysql.service
-           └─2169 /usr/sbin/mysqld
-
-Nov 21 13:04:33 ubuntu systemd[1]: Starting MySQL Community Server...
-Nov 21 13:04:34 ubuntu systemd[1]: Started MySQL Community Server.</code></pre><h3 id="查看-MySQL-版本："><a href="#查看-MySQL-版本：" class="headerlink" title="查看 MySQL 版本："></a>查看 MySQL 版本：</h3><pre><code>mysqladmin -p -u root version</code></pre><h1 id="配置远程访问"><a href="#配置远程访问" class="headerlink" title="配置远程访问"></a>配置远程访问</h1><ul>
-<li>修改配置文件<pre><code>nano /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre></li>
-<li>注释掉(语句前面加上 # 即可)：<pre><code>bind-address = 127.0.0.1</code></pre></li>
-<li>重启 MySQL<pre><code>service mysql restart</code></pre></li>
-<li>登录 MySQL<pre><code>mysql -u root -p</code></pre></li>
-<li>授权 root 用户允许所有人连接<pre><code>grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;你的 mysql root 账户密码&#39;;</code></pre></li>
-</ul>
-<h1 id="因弱口令无法成功授权解决步骤"><a href="#因弱口令无法成功授权解决步骤" class="headerlink" title="因弱口令无法成功授权解决步骤"></a>因弱口令无法成功授权解决步骤</h1><ul>
-<li>查看和设置密码安全级别<pre><code>select @@validate_password_policy;</code></pre><pre><code>set global validate_password_policy=0;</code></pre></li>
-<li>查看和设置密码长度限制<pre><code>select @@validate_password_length;</code></pre><pre><code>set global validate_password_length=1;</code></pre></li>
-</ul>
-<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><pre><code>service mysql start</code></pre><h3 id="停止"><a href="#停止" class="headerlink" title="停止"></a>停止</h3><pre><code>service mysql stop</code></pre><h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><pre><code>service mysql restart</code></pre><h1 id="其它配置"><a href="#其它配置" class="headerlink" title="其它配置"></a>其它配置</h1><p>修改配置 <code>mysqld.cnf</code> 配置文件</p>
-<pre><code>vi /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre><h3 id="配置默认字符集"><a href="#配置默认字符集" class="headerlink" title="配置默认字符集"></a>配置默认字符集</h3><p>在 <code>[mysqld]</code> 节点上增加如下配置</p>
-<pre><code>[client]
-default-character-set=utf8</code></pre><p>在 <code>[mysqld]</code>节点底部增加如下配置</p>
-<pre><code>default-storage-engine=INNODB
-character-set-server=utf8
-collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小写敏感"><a href="#配置忽略数据库大小写敏感" class="headerlink" title="配置忽略数据库大小写敏感"></a>配置忽略数据库大小写敏感</h3><p>在 <code>[mysqld]</code>节点底部增加如下配置</p>
-<pre><code>lower-case-table-names = 1</code></pre>
+                <h1 id="Linux-安装-Tomcat"><a href="#Linux-安装-Tomcat" class="headerlink" title="Linux 安装 Tomcat"></a>Linux 安装 Tomcat</h1><blockquote>
+<p>此处以 Tomcat 8.5.23 为例</p>
+</blockquote>
+<p>下载地址<br><a href="https://tomcat.apache.org/" target="_blank" rel="noopener">https://tomcat.apache.org/</a></p>
+<h1 id="解压缩并移动到指定目录"><a href="#解压缩并移动到指定目录" class="headerlink" title="解压缩并移动到指定目录"></a>解压缩并移动到指定目录</h1><h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h3><pre><code>tar -zxvf apache-tomcat-8.5.23.tar.gz</code></pre><h3 id="变更目录名"><a href="#变更目录名" class="headerlink" title="变更目录名"></a>变更目录名</h3><pre><code>mv apache-tomcat-8.5.23 tomcat</code></pre><h3 id="移动目录"><a href="#移动目录" class="headerlink" title="移动目录"></a>移动目录</h3><pre><code>mv tomcat/ /usr/local/</code></pre><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><pre><code>/usr/local/tomcat/bin/startup.sh</code></pre><h3 id="停止"><a href="#停止" class="headerlink" title="停止"></a>停止</h3><pre><code>/usr/local/tomcat/bin/shutdown.sh</code></pre><h3 id="目录内执行脚本"><a href="#目录内执行脚本" class="headerlink" title="目录内执行脚本"></a>目录内执行脚本</h3><pre><code>./startup.sh</code></pre>
             </div>
             <hr />
 
@@ -662,9 +638,9 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Linux 安装 MySQL》
+                    《Linux 安装 Tomcat》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/12/linux-an-zhuang-mysql/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/08/12/linux-an-zhuang-tomcat/" property="cc:attributionName"
                rel="cc:attributionURL">
                 乐乐
             </a> 采用
@@ -705,7 +681,7 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
         repo: 'leblog.github.io',
         owner: 'leblog',
         admin: "leblog",
-        id: '2019/08/12/linux-an-zhuang-mysql/',
+        id: '2018/08/12/linux-an-zhuang-tomcat/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -969,8 +945,8 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
 <script>
     new Valine({
         el: '#vcomments',
-        appId: '',
-        appKey: '',
+        appId: 'YmPE2S3A30K4F45f4v2KMEE3-gzGzoHsz',
+        appKey: 'qIRjv9za1uexAgQlRqF8dScd',
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'false' === 'true',
@@ -992,24 +968,24 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/08/16/linux-lvm-ci-pan-kuo-rong/">
+                <a href="/2018/08/12/linux-an-zhuang-mysql/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Linux LVM 磁盘扩容">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Linux 安装 MySQL">
                         
-                        <span class="card-title">Linux LVM 磁盘扩容</span>
+                        <span class="card-title">Linux 安装 MySQL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            LVM 的基本概念物理卷 Physical volume (PV)可以在上面建立卷组的媒介，可以是硬盘分区，也可以是硬盘本身或者回环文件（loopback file）。物理卷包括一个特殊的 header，其余部分被切割为一块块物理区域（ph
+                            Linux 安装 MySQL更新数据源apt-get update安装 MySQLapt-get install mysql-server系统将提示您在安装过程中创建 root 密码。选择一个安全的密码，并确保你记住它，因为你以后需要它。接
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-16
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-08-12
                         </span>
                         <span class="publish-author">
                             
@@ -1030,6 +1006,10 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
                         <span class="chip bg-color">Linux</span>
                     </a>
                     
+                    <a href="/tags/MySql/" target="_blank">
+                        <span class="chip bg-color">MySql</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1041,28 +1021,27 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/12/linux-an-zhuang-tomcat/">
+                <a href="/2018/08/12/linux-an-zhuang-java/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Linux 安装 Tomcat">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Linux 安装 Java">
                         
-                        <span class="card-title">Linux 安装 Tomcat</span>
+                        <span class="card-title">Linux 安装 Java</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux 安装 Tomcat
-此处以 Tomcat 8.5.23 为例
+                            
+此处以 JDK 1.8.0_152 为例
 
-下载地址https://tomcat.apache.org/
-解压缩并移动到指定目录解压缩tar -zxvf apache-tomcat-8.5.23.tar.gz
+解压缩并移动到指定目录解压缩tar -zxvf jdk-8u152-linux-x64.tar.gz创建目录mkdir -p /usr/local/java移动安装包mv jdk1.8.0_15
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-08-12
                             </span>
                         <span class="publish-author">
                             
@@ -1079,12 +1058,12 @@ collation-server=utf8_general_ci</code></pre><h3 id="配置忽略数据库大小
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">教程</span>
                     </a>
                     
-                    <a href="/tags/Tomcat/" target="_blank">
-                        <span class="chip bg-color">Tomcat</span>
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>
@@ -1413,17 +1392,6 @@ $(function () {
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', '');
-</script>
-
 
 
     
@@ -1435,8 +1403,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-    
-    <script type="text/javascript" src="/libs/others/snow.js"></script>
     
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":null,"width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
