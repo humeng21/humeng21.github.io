@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leblog.github.io/2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/</loc>
+    <lastmod>2019-11-15</lastmod>
+  </url>  <url>
+    <loc>https://leblog.github.io/2018/03/11/hexo-github-1/</loc>
+    <lastmod>2019-11-15</lastmod>
+  </url>  <url>
+    <loc>https://leblog.github.io/2018/04/23/shi-yong-github-bu-shu-wang-zhan/</loc>
+    <lastmod>2019-11-15</lastmod>
+  </url>  <url>
     <loc>https://leblog.github.io/2018/08/02/linux-yuan-cheng-kong-zhi-guan-li/</loc>
     <lastmod>2019-11-12</lastmod>
   </url>  <url>
@@ -31,7 +40,7 @@
     <loc>https://leblog.github.io/2018/07/21/java-xiao-zhi-shi-zong-jie/</loc>
     <lastmod>2019-11-11</lastmod>
   </url>  <url>
-    <loc>https://leblog.github.io/2018/07/09/hexo-jdk8-de-xin-te-xing/</loc>
+    <loc>https://leblog.github.io/2018/07/09/jdk8-de-xin-te-xing/</loc>
     <lastmod>2019-11-11</lastmod>
   </url>  <url>
     <loc>https://leblog.github.io/2018/05/01/a-li-ba-ba-java-fang-xiang-mian-shi-ti-hui-zong-han-da-an/</loc>
@@ -64,9 +73,6 @@
     <loc>https://leblog.github.io/2018/04/12/juint-dan-yuan-ce-shi/</loc>
     <lastmod>2019-11-11</lastmod>
   </url>  <url>
-    <loc>https://leblog.github.io/2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/</loc>
-    <lastmod>2019-11-11</lastmod>
-  </url>  <url>
     <loc>https://leblog.github.io/2018/04/03/bootstrap-zhi-wang-ge-xi-tong/</loc>
     <lastmod>2019-11-11</lastmod>
   </url>  <url>
@@ -81,11 +87,5 @@
   </url>  <url>
     <loc>https://leblog.github.io/2018/04/23/ru-he-ba-geng-xin-hou-de-xiang-mu-chong-xin-chuan-dao-github-shang/</loc>
     <lastmod>2019-10-24</lastmod>
-  </url>  <url>
-    <loc>https://leblog.github.io/2018/04/23/shi-yong-github-bu-shu-wang-zhan/</loc>
-    <lastmod>2019-10-23</lastmod>
-  </url>  <url>
-    <loc>https://leblog.github.io/2018/03/11/hexo-github-1/</loc>
-    <lastmod>2019-10-16</lastmod>
   </url>
 </urlset>
