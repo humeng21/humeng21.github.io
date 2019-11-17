@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="log4j的使用,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="log4j的使用, 程序员小乐">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>log4j的使用 | 乐乐的博客</title>
+    <title>log4j的使用 | 程序员小乐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -55,7 +55,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">乐乐的博客</span>
+                    <span class="logo-span">程序员小乐</span>
                 </a>
             </div>
             
@@ -125,10 +125,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">乐乐的博客</div>
+        <div class="logo-name">程序员小乐</div>
         <div class="logo-desc">
             
-            许昌职业技术学院 | 计算机科学与技术 | 自然语言处理
+            计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -291,7 +291,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -442,7 +442,7 @@
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                    乐乐
+                    小乐
                     
                 </div>
 
@@ -534,49 +534,13 @@
 </ul>
 <h1 id="Slf4j-简介"><a href="#Slf4j-简介" class="headerlink" title="Slf4j 简介"></a>Slf4j 简介</h1><p>slf4j 的全称是 Simple Loging Facade For Java，即它仅仅是一个为 Java 程序提供日志输出的统一接口，并不是一个具体的日志实现方案，就比如 JDBC 一样，只是一种规则而已。所以单独的 slf4j 是不能工作的，必须搭配其他具体的日志实现方案，比如 apache 的 <code>org.apache.log4j.Logger</code>，JDK 自带的 <code>java.util.logging.Logger</code> 以及 log4j 等。<br>(Slf4j只有实现，也就是一个接口)</p>
 <h1 id="POM"><a href="#POM" class="headerlink" title="POM"></a>POM</h1><p>继续之前的项目，pom.xml 配置如下：</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; 
-         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; </span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.funtl&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;hello-spring&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;4.3.17.RELEASE&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.slf4j&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.7.25&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
-    &lt;groupId&gt;com.funtl&lt;/groupId&gt;
-    &lt;artifactId&gt;hello-spring&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
-    &lt;packaging&gt;jar&lt;/packaging&gt;
-
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;
-            &lt;version&gt;4.3.17.RELEASE&lt;/version&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;junit&lt;/groupId&gt;
-            &lt;artifactId&gt;junit&lt;/artifactId&gt;
-            &lt;version&gt;4.12&lt;/version&gt;
-            &lt;scope&gt;test&lt;/scope&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
-            &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;
-            &lt;version&gt;1.7.25&lt;/version&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/project&gt;</code></pre><p>主要增加了<code>org.slf4j:slf4j-log4j12</code> 依赖</p>
+<p>主要增加了<code>org.slf4j:slf4j-log4j12</code> 依赖</p>
 <h1 id="创建-log4j-properties配置文件"><a href="#创建-log4j-properties配置文件" class="headerlink" title="创建 log4j.properties配置文件"></a>创建 <code>log4j.properties</code>配置文件</h1><p>在 <code>src/main/resources</code> 目录下创建名为<code>log4j.properties</code> 的属性配置文件</p>
-<pre><code>log4j.rootLogger=INFO, console, file
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">log4j.rootLogger=INFO, console, file</span><br><span class="line"></span><br><span class="line">log4j.appender.console=org.apache.log4j.ConsoleAppender</span><br><span class="line">log4j.appender.console.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.console.layout.ConversionPattern=%d %p [%c] - %m%n</span><br><span class="line"></span><br><span class="line">log4j.appender.file=org.apache.log4j.DailyRollingFileAppender</span><br><span class="line">log4j.appender.file.File=logs/log.log</span><br><span class="line">log4j.appender.file.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.A3.MaxFileSize=1024KB</span><br><span class="line">log4j.appender.A3.MaxBackupIndex=10</span><br><span class="line">log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n</span><br></pre></td></tr></table></figure>
 
-log4j.appender.console=org.apache.log4j.ConsoleAppender
-log4j.appender.console.layout=org.apache.log4j.PatternLayout
-log4j.appender.console.layout.ConversionPattern=%d %p [%c] - %m%n
-
-log4j.appender.file=org.apache.log4j.DailyRollingFileAppender
-log4j.appender.file.File=logs/log.log
-log4j.appender.file.layout=org.apache.log4j.PatternLayout
-log4j.appender.A3.MaxFileSize=1024KB
-log4j.appender.A3.MaxBackupIndex=10
-log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n</code></pre><p>日志配置相关说明：</p>
+<p>日志配置相关说明：</p>
 <ul>
 <li><code>log4j.rootLogger</code>：根日志，配置了日志级别为 INFO，预定义了名称为 console、file 两种附加器</li>
 <li><code>log4j.appender.console</code>：console 附加器，日志输出位置在控制台</li>
@@ -587,23 +551,14 @@ log4j.appender.file.layout.ConversionPattern=%d %p [%c] - %m%n</code></pre><p>�
 <li><code>log4j.appender.file.layout</code>：file 附加器，采用匹配器布局模式</li>
 <li><code>log4j.appender.A3.MaxFileSize</code>：日志文件最大值</li>
 <li><code>log4j.appender.A3.MaxBackupIndex</code>：最多纪录文件数</li>
-<li><code>log4j.appender.file.layout.ConversionPattern</code>：file 附加器，日志输出格式为：日期 日志级别 [类名] - 消息<code>换行符</code><h1 id="测试日志输出"><a href="#测试日志输出" class="headerlink" title="测试日志输出"></a>测试日志输出</h1>创建一个测试类，并测试日志输出效果，代码如下：<pre><code>package com.funtl.hello.spring;
-</code></pre></li>
+<li><code>log4j.appender.file.layout.ConversionPattern</code>：file 附加器，日志输出格式为：日期 日志级别 [类名] - 消息<code>换行符</code><h1 id="测试日志输出"><a href="#测试日志输出" class="headerlink" title="测试日志输出"></a>测试日志输出</h1>创建一个测试类，并测试日志输出效果，代码如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">package com.funtl.hello.spring;</span><br><span class="line"></span><br><span class="line">import org.slf4j.Logger;</span><br><span class="line">import org.slf4j.LoggerFactory;</span><br><span class="line"></span><br><span class="line">public class MyTest &#123;</span><br><span class="line"></span><br><span class="line">    public static final Logger logger = LoggerFactory.getLogger(MyTest.class);</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        logger.info(&quot;slf4j for info&quot;);</span><br><span class="line">        logger.debug(&quot;slf4j for debug&quot;);</span><br><span class="line">        logger.error(&quot;slf4j for error&quot;);</span><br><span class="line">        logger.warn(&quot;slf4j for warn&quot;);</span><br><span class="line"></span><br><span class="line">        String message = &quot;Hello SLF4J&quot;;</span><br><span class="line">        logger.info(&quot;slf4j message is : &#123;&#125;&quot;, message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
-<p>import org.slf4j.Logger;<br>import org.slf4j.LoggerFactory;</p>
-<p>public class MyTest {</p>
-<pre><code>public static final Logger logger = LoggerFactory.getLogger(MyTest.class);
+<p>此时控制台显示为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2018-06-07 05:15:42,914 INFO [com.funtl.hello.spring.MyTest] - slf4j for info</span><br><span class="line">2018-06-07 05:15:42,915 ERROR [com.funtl.hello.spring.MyTest] - slf4j for error</span><br><span class="line">2018-06-07 05:15:42,915 WARN [com.funtl.hello.spring.MyTest] - slf4j for warn</span><br><span class="line">2018-06-07 05:15:42,916 INFO [com.funtl.hello.spring.MyTest] - slf4j message is : Hello SLF4J</span><br></pre></td></tr></table></figure>
 
-public static void main(String[] args) {
-    logger.info(&quot;slf4j for info&quot;);
-    logger.debug(&quot;slf4j for debug&quot;);
-    logger.error(&quot;slf4j for error&quot;);
-    logger.warn(&quot;slf4j for warn&quot;);
-
-    String message = &quot;Hello SLF4J&quot;;
-    logger.info(&quot;slf4j message is : {}&quot;, message);
-}</code></pre><p>}</p>
-<pre><code>此时控制台显示为：</code></pre><p>2018-06-07 05:15:42,914 INFO [com.funtl.hello.spring.MyTest] - slf4j for info<br>2018-06-07 05:15:42,915 ERROR [com.funtl.hello.spring.MyTest] - slf4j for error<br>2018-06-07 05:15:42,915 WARN [com.funtl.hello.spring.MyTest] - slf4j for warn<br>2018-06-07 05:15:42,916 INFO [com.funtl.hello.spring.MyTest] - slf4j message is : Hello SLF4J<br>```<br>项目根目录下也会多出 <code>logs/log.log</code> 目录及文件</p>
+<p>项目根目录下也会多出 <code>logs/log.log</code> 目录及文件</p>
 <h1 id="附：占位符说明"><a href="#附：占位符说明" class="headerlink" title="附：占位符说明"></a>附：占位符说明</h1><p>打日志的时候使用了<code>{}</code> 占位符，这样就不会有字符串拼接操作，减少了无用 <code>String</code> 对象的数量，节省了内存。并且，记住，在生产最终日志信息的字符串之前，这个方法会检查一个特定的日志级别是不是打开了，这不仅降低了内存消耗而且预先降低了<code>CPU</code> 去处理字符串连接命令的时间。</p>
 
             </div>
@@ -767,7 +722,7 @@ public static void main(String[] args) {
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/06/11/log4j-de-shi-yong/" property="cc:attributionName"
                rel="cc:attributionURL">
-                乐乐
+                小乐
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -790,28 +745,6 @@ public static void main(String[] args) {
         </div>
     </div>
 
-    
-    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: 'leblog.github.io',
-        owner: 'leblog',
-        admin: "leblog",
-        id: '2018/06/11/log4j-de-shi-yong/',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
     
 
     
@@ -1097,7 +1030,7 @@ public static void main(String[] args) {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo 博客部署到腾讯云教程">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Hexo 博客部署到腾讯云教程">
                         
                         <span class="card-title">Hexo 博客部署到腾讯云教程</span>
                     </div>
@@ -1164,7 +1097,7 @@ Nginx 的配置
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="高内聚低耦合">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="高内聚低耦合">
                         
                         <span class="card-title">高内聚低耦合</span>
                     </div>
@@ -1207,12 +1140,12 @@ Nginx 的配置
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/随笔/" target="_blank">
-                        <span class="chip bg-color">随笔</span>
-                    </a>
-                    
                     <a href="/tags/学习笔记/" target="_blank">
                         <span class="chip bg-color">学习笔记</span>
+                    </a>
+                    
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
@@ -1252,8 +1185,8 @@ Nginx 的配置
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 乐乐的博客<br />'
-            + '作者: 乐乐<br />'
+            + '来源: 程序员小乐<br />'
+            + '作者: 小乐<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1374,7 +1307,7 @@ Nginx 的配置
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.2k</span>
+            <span class="white-color">37.1k</span>
             
 
             <br>
@@ -1540,6 +1473,17 @@ $(function () {
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
 
 
 

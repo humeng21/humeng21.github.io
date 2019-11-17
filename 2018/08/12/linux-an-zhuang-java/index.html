@@ -4,14 +4,18 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux 安装 Java,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Linux 安装 Java, 程序员小乐">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
     <meta name="description" content="
 此处以 JDK 1.8.0_152 为例
 
-解压缩并移动到指定目录解压缩tar -zxvf jdk-8u152-linux-x64.tar.gz创建目录mkdir -p /usr/local/java移动安装包mv jdk1.8.0_15">
+解压缩并移动到指定目录解压缩1tar -zxvf jdk-8u152-linux-x64.tar.gz
+
+创建目录1mkdir -p /usr/local/java
+
+移动安装包1mv jdk1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +23,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Linux 安装 Java | 乐乐的博客</title>
+    <title>Linux 安装 Java | 程序员小乐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -57,7 +61,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">乐乐的博客</span>
+                    <span class="logo-span">程序员小乐</span>
                 </a>
             </div>
             
@@ -127,10 +131,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">乐乐的博客</div>
+        <div class="logo-name">程序员小乐</div>
         <div class="logo-desc">
             
-            许昌职业技术学院 | 计算机科学与技术 | 自然语言处理
+            计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -293,7 +297,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -444,7 +448,7 @@
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                    乐乐
+                    小乐
                     
                 </div>
 
@@ -452,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    338
+                    334
                 </div>
                 
 
@@ -478,42 +482,27 @@
                 <blockquote>
 <p>此处以 JDK 1.8.0_152 为例</p>
 </blockquote>
-<h1 id="解压缩并移动到指定目录"><a href="#解压缩并移动到指定目录" class="headerlink" title="解压缩并移动到指定目录"></a>解压缩并移动到指定目录</h1><h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h3><pre><code>tar -zxvf jdk-8u152-linux-x64.tar.gz</code></pre><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><pre><code>mkdir -p /usr/local/java</code></pre><h3 id="移动安装包"><a href="#移动安装包" class="headerlink" title="移动安装包"></a>移动安装包</h3><pre><code>mv jdk1.8.0_152/ /usr/local/java/</code></pre><h3 id="设置所有者"><a href="#设置所有者" class="headerlink" title="设置所有者"></a>设置所有者</h3><pre><code>chown -R root:root /usr/local/java/</code></pre><h1 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h1><h3 id="配置系统环境变量"><a href="#配置系统环境变量" class="headerlink" title="配置系统环境变量"></a>配置系统环境变量</h3><pre><code>nano /etc/environment</code></pre><h3 id="添加如下语句"><a href="#添加如下语句" class="headerlink" title="添加如下语句"></a>添加如下语句</h3><pre><code>PATH=&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games&quot;
-export JAVA_HOME=/usr/local/java/jdk1.8.0_152
-export JRE_HOME=/usr/local/java/jdk1.8.0_152/jre
-export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib</code></pre><h3 id="配置用户环境变量"><a href="#配置用户环境变量" class="headerlink" title="配置用户环境变量"></a>配置用户环境变量</h3><pre><code>nano /etc/profile</code></pre><h3 id="添加如下语句-1"><a href="#添加如下语句-1" class="headerlink" title="添加如下语句"></a>添加如下语句</h3><pre><code>if [ &quot;$PS1&quot; ]; then
-  if [ &quot;$BASH&quot; ] &amp;&amp; [ &quot;$BASH&quot; != &quot;/bin/sh&quot; ]; then
-    # The file bash.bashrc already sets the default PS1.
-    # PS1=&#39;\h:\w\$ &#39;
-    if [ -f /etc/bash.bashrc ]; then
-      . /etc/bash.bashrc
-    fi
-  else
-    if [ &quot;`id -u`&quot; -eq 0 ]; then
-      PS1=&#39;# &#39;
-    else
-      PS1=&#39;$ &#39;
-    fi
-  fi
-fi
+<h1 id="解压缩并移动到指定目录"><a href="#解压缩并移动到指定目录" class="headerlink" title="解压缩并移动到指定目录"></a>解压缩并移动到指定目录</h1><h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-8u152-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
 
-export JAVA_HOME=/usr/local/java/jdk1.8.0_152
-export JRE_HOME=/usr/local/java/jdk1.8.0_152/jre
-export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOME/bin
+<h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /usr/local/java</span><br></pre></td></tr></table></figure>
 
-if [ -d /etc/profile.d ]; then
-  for i in /etc/profile.d/*.sh; do
-    if [ -r $i ]; then
-      . $i
-    fi
-  done
-  unset i
-fi</code></pre><h3 id="使用户环境变量生效"><a href="#使用户环境变量生效" class="headerlink" title="使用户环境变量生效"></a>使用户环境变量生效</h3><pre><code>source /etc/profile</code></pre><h3 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h3><pre><code>root@UbuntuBase:/usr/local/java# java -version
-java version &quot;1.8.0_152&quot;
-Java(TM) SE Runtime Environment (build 1.8.0_152-b16)
-Java HotSpot(TM) 64-Bit Server VM (build 25.152-b16, mixed mode)</code></pre><h3 id="为其他用户更新用户环境变量"><a href="#为其他用户更新用户环境变量" class="headerlink" title="为其他用户更新用户环境变量"></a>为其他用户更新用户环境变量</h3><pre><code>su lusifer
-source /etc/profile</code></pre>
+<h3 id="移动安装包"><a href="#移动安装包" class="headerlink" title="移动安装包"></a>移动安装包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv jdk1.8.0_152/ /usr/local/java/</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置所有者"><a href="#设置所有者" class="headerlink" title="设置所有者"></a>设置所有者</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -R root:root /usr/local/java/</span><br></pre></td></tr></table></figure>
+
+<h1 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h1><h3 id="配置系统环境变量"><a href="#配置系统环境变量" class="headerlink" title="配置系统环境变量"></a>配置系统环境变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/environment</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加如下语句"><a href="#添加如下语句" class="headerlink" title="添加如下语句"></a>添加如下语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PATH=&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games&quot;</span><br><span class="line">export JAVA_HOME=/usr/local/java/jdk1.8.0_152</span><br><span class="line">export JRE_HOME=/usr/local/java/jdk1.8.0_152/jre</span><br><span class="line">export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置用户环境变量"><a href="#配置用户环境变量" class="headerlink" title="配置用户环境变量"></a>配置用户环境变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/profile</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加如下语句-1"><a href="#添加如下语句-1" class="headerlink" title="添加如下语句"></a>添加如下语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">if [ &quot;$PS1&quot; ]; then</span><br><span class="line">  if [ &quot;$BASH&quot; ] &amp;&amp; [ &quot;$BASH&quot; != &quot;/bin/sh&quot; ]; then</span><br><span class="line">    # The file bash.bashrc already sets the default PS1.</span><br><span class="line">    # PS1=&apos;\h:\w\$ &apos;</span><br><span class="line">    if [ -f /etc/bash.bashrc ]; then</span><br><span class="line">      . /etc/bash.bashrc</span><br><span class="line">    fi</span><br><span class="line">  else</span><br><span class="line">    if [ &quot;`id -u`&quot; -eq 0 ]; then</span><br><span class="line">      PS1=&apos;# &apos;</span><br><span class="line">    else</span><br><span class="line">      PS1=&apos;$ &apos;</span><br><span class="line">    fi</span><br><span class="line">  fi</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">export JAVA_HOME=/usr/local/java/jdk1.8.0_152</span><br><span class="line">export JRE_HOME=/usr/local/java/jdk1.8.0_152/jre</span><br><span class="line">export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib</span><br><span class="line">export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOME/bin</span><br><span class="line"></span><br><span class="line">if [ -d /etc/profile.d ]; then</span><br><span class="line">  for i in /etc/profile.d/*.sh; do</span><br><span class="line">    if [ -r $i ]; then</span><br><span class="line">      . $i</span><br><span class="line">    fi</span><br><span class="line">  done</span><br><span class="line">  unset i</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用户环境变量生效"><a href="#使用户环境变量生效" class="headerlink" title="使用户环境变量生效"></a>使用户环境变量生效</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<h3 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@UbuntuBase:/usr/local/java# java -version</span><br><span class="line">java version &quot;1.8.0_152&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_152-b16)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.152-b16, mixed mode)</span><br></pre></td></tr></table></figure>
+
+<h3 id="为其他用户更新用户环境变量"><a href="#为其他用户更新用户环境变量" class="headerlink" title="为其他用户更新用户环境变量"></a>为其他用户更新用户环境变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su lusifer</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
             </div>
             <hr />
 
@@ -675,7 +664,7 @@ source /etc/profile</code></pre>
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/08/12/linux-an-zhuang-java/" property="cc:attributionName"
                rel="cc:attributionURL">
-                乐乐
+                小乐
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -698,28 +687,6 @@ source /etc/profile</code></pre>
         </div>
     </div>
 
-    
-    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: 'leblog.github.io',
-        owner: 'leblog',
-        admin: "leblog",
-        id: '2018/08/12/linux-an-zhuang-java/',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
     
 
     
@@ -1005,7 +972,7 @@ source /etc/profile</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Linux 安装 Tomcat">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Linux 安装 Tomcat">
                         
                         <span class="card-title">Linux 安装 Tomcat</span>
                     </div>
@@ -1017,7 +984,7 @@ source /etc/profile</code></pre>
 此处以 Tomcat 8.5.23 为例
 
 下载地址https://tomcat.apache.org/
-解压缩并移动到指定目录解压缩tar -zxvf apache-tomcat-8.5.23.tar.gz
+解压缩并移动到指定目录解压缩1tar -zxvf apache-tomcat-8.5.23.tar.g
                         
                     </div>
                     <div class="publish-info">
@@ -1062,7 +1029,7 @@ source /etc/profile</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Linux 文件权限管理">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="Linux 文件权限管理">
                         
                         <span class="card-title">Linux 文件权限管理</span>
                     </div>
@@ -1134,8 +1101,8 @@ ls -l 文件名 显示信息包括：文件类型 (d 目录，-普通文件，l 
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 乐乐的博客<br />'
-            + '作者: 乐乐<br />'
+            + '来源: 程序员小乐<br />'
+            + '作者: 小乐<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1256,7 +1223,7 @@ ls -l 文件名 显示信息包括：文件类型 (d 目录，-普通文件，l 
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.2k</span>
+            <span class="white-color">37.1k</span>
             
 
             <br>
@@ -1422,6 +1389,17 @@ $(function () {
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
 
 
 

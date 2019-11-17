@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo 博客部署到腾讯云教程,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Hexo 博客部署到腾讯云教程, 程序员小乐">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
@@ -30,7 +30,7 @@ Nginx 的配置
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hexo 博客部署到腾讯云教程 | 乐乐的博客</title>
+    <title>Hexo 博客部署到腾讯云教程 | 程序员小乐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -68,7 +68,7 @@ Nginx 的配置
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">乐乐的博客</span>
+                    <span class="logo-span">程序员小乐</span>
                 </a>
             </div>
             
@@ -138,10 +138,10 @@ Nginx 的配置
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">乐乐的博客</div>
+        <div class="logo-name">程序员小乐</div>
         <div class="logo-desc">
             
-            许昌职业技术学院 | 计算机科学与技术 | 自然语言处理
+            计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -304,7 +304,7 @@ Nginx 的配置
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -455,7 +455,7 @@ Nginx 的配置
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                    乐乐
+                    小乐
                     
                 </div>
 
@@ -615,14 +615,9 @@ Nginx 的配置
 </blockquote>
 <p>到这里，我们的 git 仓库算是完全搭建好了。下面进行 Nginx 的配置。</p>
 <h1 id="3-云服务器端配置-Nginx"><a href="#3-云服务器端配置-Nginx" class="headerlink" title="3.云服务器端配置 Nginx"></a>3.云服务器端配置 Nginx</h1><p>安装 Nginx<br>yum install -y nginx<br>启动 Nginx<br>service nginx start<br>测试 Nginx 服务器<br>wget <a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a><br>能够正常获取以下欢迎页面说明Nginx安装成功。</p>
-<pre><code>Connecting to 127.0.0.1:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 43704 (43K) [text/html]
-Saving to: ‘index.html’
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Connecting to 127.0.0.1:80... connected.</span><br><span class="line">HTTP request sent, awaiting response... 200 OK</span><br><span class="line">Length: 43704 (43K) [text/html]</span><br><span class="line">Saving to: ‘index.html’</span><br><span class="line"></span><br><span class="line">100%[=======================================&gt;] 43,704      --.-K/s   in 0s</span><br><span class="line"></span><br><span class="line">2018-03-09 23:04:09 (487 MB/s) - ‘index.html’ saved [43704/43704]</span><br></pre></td></tr></table></figure>
 
-100%[=======================================&gt;] 43,704      --.-K/s   in 0s
-
-2018-03-09 23:04:09 (487 MB/s) - ‘index.html’ saved [43704/43704]</code></pre><ul>
+<ul>
 <li><p>测试网页是否能打开<br>在浏览器中输入服务器 ip 地址，就是服务器的公网 ip。</p>
 </li>
 <li><p>配置 Nginx 托管文件目录</p>
@@ -648,20 +643,9 @@ Saving to: ‘index.html’
 <ul>
 <li>按方向键，找到如下位置</li>
 </ul>
-<pre><code>server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    root /home/hexoBlog;    #需要修改
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 default_server;</span><br><span class="line">    listen [::]:80 default_server;</span><br><span class="line">    root /home/hexoBlog;    #需要修改</span><br><span class="line">    </span><br><span class="line">    server_name www.bujige.net; #需要修改</span><br><span class="line">    </span><br><span class="line">    # Load configuration files for the default server block.</span><br><span class="line">    include /etc/nginx/default.d/*.conf;</span><br><span class="line">    location / &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    error_page 404 /404.html;</span><br><span class="line">        location = /40x.html &#123;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-    server_name www.bujige.net; #需要修改
-
-    # Load configuration files for the default server block.
-    include /etc/nginx/default.d/*.conf;
-    location / {
-    }
-    error_page 404 /404.html;
-        location = /40x.html {
-    }</code></pre><p>按<code>i</code>键进入插入模式，将其中的 root 值改为<code>/home/hexoBlog</code> （刚才创建的托管仓库目录）。<br>将 server_name 值改成你的域名。</p>
+<p>按<code>i</code>键进入插入模式，将其中的 root 值改为<code>/home/hexoBlog</code> （刚才创建的托管仓库目录）。<br>将 server_name 值改成你的域名。</p>
 <ul>
 <li>重启 Nginx 服务</li>
 </ul>
@@ -849,7 +833,7 @@ Saving to: ‘index.html’
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/" property="cc:attributionName"
                rel="cc:attributionURL">
-                乐乐
+                小乐
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -872,28 +856,6 @@ Saving to: ‘index.html’
         </div>
     </div>
 
-    
-    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: 'leblog.github.io',
-        owner: 'leblog',
-        admin: "leblog",
-        id: '2018/07/03/hexo-bo-ke-bu-shu-dao-teng-xun-yun-jiao-cheng/',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
     
 
     
@@ -1179,7 +1141,7 @@ Saving to: ‘index.html’
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="JDK8的新特性">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="JDK8的新特性">
                         
                         <span class="card-title">JDK8的新特性</span>
                     </div>
@@ -1242,7 +1204,7 @@ Fun
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="log4j的使用">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="log4j的使用">
                         
                         <span class="card-title">log4j的使用</span>
                     </div>
@@ -1318,8 +1280,8 @@ Fun
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 乐乐的博客<br />'
-            + '作者: 乐乐<br />'
+            + '来源: 程序员小乐<br />'
+            + '作者: 小乐<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1440,7 +1402,7 @@ Fun
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.2k</span>
+            <span class="white-color">37.1k</span>
             
 
             <br>
@@ -1606,6 +1568,17 @@ $(function () {
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
 
 
 

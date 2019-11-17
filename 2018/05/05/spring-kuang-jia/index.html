@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Spring框架,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Spring框架, 程序员小乐">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Spring框架 | 乐乐的博客</title>
+    <title>Spring框架 | 程序员小乐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -55,7 +55,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">乐乐的博客</span>
+                    <span class="logo-span">程序员小乐</span>
                 </a>
             </div>
             
@@ -125,10 +125,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">乐乐的博客</div>
+        <div class="logo-name">程序员小乐</div>
         <div class="logo-desc">
             
-            许昌职业技术学院 | 计算机科学与技术 | 自然语言处理
+            计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -291,7 +291,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -442,7 +442,7 @@
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                    乐乐
+                    小乐
                     
                 </div>
 
@@ -494,46 +494,17 @@
 <p>Spring 的依赖注入对调用者与被调用者几乎没有任何要求，完全支持 POJO 之间依赖关系的管理。</p>
 <p><strong>依赖注入是目前最优秀的解耦方式</strong>。依赖注入让 Spring 的 Bean 之间以配置文件的方式组织在一起，而不是以硬编码的方式耦合在一起的。</p>
 <h1 id="POM"><a href="#POM" class="headerlink" title="POM"></a>POM</h1><p>创建一个工程名为 hello-spring 的项目，pom.xml 文件如下：</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
-         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.lele&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;hello-spring&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;4.3.17.RELEASE&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
-    &lt;groupId&gt;com.lele&lt;/groupId&gt;
-    &lt;artifactId&gt;hello-spring&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
-    &lt;packaging&gt;jar&lt;/packaging&gt;
+<p>主要增加了 org.springframework:spring-context 依赖</p>
+<h1 id="创建接口与实现"><a href="#创建接口与实现" class="headerlink" title="创建接口与实现"></a>创建接口与实现</h1><h3 id="创建-UserService-接口"><a href="#创建-UserService-接口" class="headerlink" title="创建 UserService 接口"></a>创建 <code>UserService</code> 接口</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">package com.lele.hello.spring.service;</span><br><span class="line"></span><br><span class="line">public interface UserService &#123;</span><br><span class="line">    public void sayHi();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-context&lt;/artifactId&gt;
-            &lt;version&gt;4.3.17.RELEASE&lt;/version&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/project&gt;</code></pre><p>主要增加了 org.springframework:spring-context 依赖</p>
-<h1 id="创建接口与实现"><a href="#创建接口与实现" class="headerlink" title="创建接口与实现"></a>创建接口与实现</h1><h3 id="创建-UserService-接口"><a href="#创建-UserService-接口" class="headerlink" title="创建 UserService 接口"></a>创建 <code>UserService</code> 接口</h3><pre><code>package com.lele.hello.spring.service;
+<h3 id="创建-UserServiceImpl-实现"><a href="#创建-UserServiceImpl-实现" class="headerlink" title="创建 UserServiceImpl 实现"></a>创建 UserServiceImpl 实现</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package com.lele.hello.spring.service.impl;</span><br><span class="line"></span><br><span class="line">import com.lele.hello.spring.service.UserService;</span><br><span class="line"></span><br><span class="line">public class UserServiceImpl implements UserService &#123;</span><br><span class="line">    public void sayHi() &#123;</span><br><span class="line">        System.out.println(&quot;Hello Spring&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-public interface UserService {
-    public void sayHi();
-}</code></pre><h3 id="创建-UserServiceImpl-实现"><a href="#创建-UserServiceImpl-实现" class="headerlink" title="创建 UserServiceImpl 实现"></a>创建 UserServiceImpl 实现</h3><pre><code>package com.lele.hello.spring.service.impl;
+<h1 id="创建-Spring-配置文件"><a href="#创建-Spring-配置文件" class="headerlink" title="创建 Spring 配置文件"></a>创建 Spring 配置文件</h1><p>在 <code>src/main/resources</code> 目录下创建 <code>spring-context.xml</code> 配置文件，从现在开始类的实例化工作交给 Spring 容器管理（IoC），配置文件如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;</span><br><span class="line">       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">       xsi:schemaLocation=&quot;</span><br><span class="line">       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;bean id=&quot;userService&quot; class=&quot;com.lele.hello.spring.service.impl.UserServiceImpl&quot; /&gt;</span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
 
-import com.lele.hello.spring.service.UserService;
-
-public class UserServiceImpl implements UserService {
-    public void sayHi() {
-        System.out.println(&quot;Hello Spring&quot;);
-    }
-}</code></pre><h1 id="创建-Spring-配置文件"><a href="#创建-Spring-配置文件" class="headerlink" title="创建 Spring 配置文件"></a>创建 Spring 配置文件</h1><p>在 <code>src/main/resources</code> 目录下创建 <code>spring-context.xml</code> 配置文件，从现在开始类的实例化工作交给 Spring 容器管理（IoC），配置文件如下：</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
-       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-       xsi:schemaLocation=&quot;
-       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&gt;
-
-    &lt;bean id=&quot;userService&quot; class=&quot;com.lele.hello.spring.service.impl.UserServiceImpl&quot; /&gt;
-&lt;/beans&gt;</code></pre><ul>
+<ul>
 <li><p><bean>：用于定义一个实例对象。一个实例对应一个 bean 元素。</bean></p>
 </li>
 <li><p>id：该属性是 Bean 实例的唯一标识，程序通过 id 属性访问 Bean，Bean 与 Bean 间的依赖关系也是通过 id 属性关联的。</p>
@@ -542,23 +513,9 @@ public class UserServiceImpl implements UserService {
 </li>
 </ul>
 <h1 id="测试-Spring-IoC"><a href="#测试-Spring-IoC" class="headerlink" title="测试 Spring IoC"></a>测试 Spring IoC</h1><p>创建一个 MyTest 测试类，测试对象是否能够通过 Spring 来创建，代码如下：</p>
-<pre><code>package com.lele.hello.spring;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">package com.lele.hello.spring;</span><br><span class="line"></span><br><span class="line">import com.lele.hello.spring.service.UserService;</span><br><span class="line">import org.springframework.context.ApplicationContext;</span><br><span class="line">import org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line">public class MyTest &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 获取 Spring 容器</span><br><span class="line">        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(&quot;spring-context.xml&quot;);</span><br><span class="line">        </span><br><span class="line">        // 从 Spring 容器中获取对象</span><br><span class="line">        UserService userService = (UserService) applicationContext.getBean(&quot;userService&quot;);</span><br><span class="line">        userService.sayHi();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-import com.lele.hello.spring.service.UserService;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyTest {
-
-    public static void main(String[] args) {
-        // 获取 Spring 容器
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(&quot;spring-context.xml&quot;);
-
-        // 从 Spring 容器中获取对象
-        UserService userService = (UserService) applicationContext.getBean(&quot;userService&quot;);
-        userService.sayHi();
-    }
-}</code></pre>
             </div>
             <hr />
 
@@ -720,7 +677,7 @@ public class MyTest {
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/05/05/spring-kuang-jia/" property="cc:attributionName"
                rel="cc:attributionURL">
-                乐乐
+                小乐
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -743,28 +700,6 @@ public class MyTest {
         </div>
     </div>
 
-    
-    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: 'leblog.github.io',
-        owner: 'leblog',
-        admin: "leblog",
-        id: '2018/05/05/spring-kuang-jia/',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
     
 
     
@@ -1050,7 +985,7 @@ public class MyTest {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="什么是三层架构">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="什么是三层架构">
                         
                         <span class="card-title">什么是三层架构</span>
                     </div>
@@ -1104,7 +1039,7 @@ public class MyTest {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="关于intelij IDEA2019.2的使用教程">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="关于intelij IDEA2019.2的使用教程">
                         
                         <span class="card-title">关于intelij IDEA2019.2的使用教程</span>
                     </div>
@@ -1184,8 +1119,8 @@ public class MyTest {
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 乐乐的博客<br />'
-            + '作者: 乐乐<br />'
+            + '来源: 程序员小乐<br />'
+            + '作者: 小乐<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1306,7 +1241,7 @@ public class MyTest {
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.2k</span>
+            <span class="white-color">37.1k</span>
             
 
             <br>
@@ -1472,6 +1407,17 @@ $(function () {
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
 
 
 

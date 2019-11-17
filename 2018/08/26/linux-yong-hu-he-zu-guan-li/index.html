@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux 用户和组管理,  乐乐 lele 自然语言处理 深度学习">
+    <meta name="keywords" content="Linux 用户和组管理, 程序员小乐">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Linux 用户和组管理 | 乐乐的博客</title>
+    <title>Linux 用户和组管理 | 程序员小乐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -55,7 +55,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">乐乐的博客</span>
+                    <span class="logo-span">程序员小乐</span>
                 </a>
             </div>
             
@@ -125,10 +125,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">乐乐的博客</div>
+        <div class="logo-name">程序员小乐</div>
         <div class="logo-desc">
             
-            许昌职业技术学院 | 计算机科学与技术 | 自然语言处理
+            计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -291,7 +291,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -442,7 +442,7 @@
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                    乐乐
+                    小乐
                     
                 </div>
 
@@ -457,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    5 分
                 </div>
                 
                 
@@ -475,16 +475,13 @@
             <div id="articleContent">
                 <h1 id="Linux-用户和组管理"><a href="#Linux-用户和组管理" class="headerlink" title="Linux 用户和组管理"></a>Linux 用户和组管理</h1><p>Linux 操作系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。</p>
 <h1 id="使用-Root-用户"><a href="#使用-Root-用户" class="headerlink" title="使用 Root 用户"></a>使用 Root 用户</h1><p>在实际生产操作中，我们基本上都是使用超级管理员账户操作 Linux 系统，也就是 Root 用户，Linux 系统默认是关闭 Root 账户的，我们需要为 Root 用户设置一个初始密码以方便我们使用。</p>
-<h3 id="设置-Root-账户密码"><a href="#设置-Root-账户密码" class="headerlink" title="设置 Root 账户密码"></a>设置 Root 账户密码</h3><pre><code>sudo passwd root</code></pre><h3 id="切换到-Root"><a href="#切换到-Root" class="headerlink" title="切换到 Root"></a>切换到 Root</h3><pre><code>su</code></pre><h3 id="设置允许远程登录-Root"><a href="#设置允许远程登录-Root" class="headerlink" title="设置允许远程登录 Root"></a>设置允许远程登录 Root</h3><pre><code>nano /etc/ssh/sshd_config
+<h3 id="设置-Root-账户密码"><a href="#设置-Root-账户密码" class="headerlink" title="设置 Root 账户密码"></a>设置 Root 账户密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
 
-# Authentication:
-LoginGraceTime 120
-#PermitRootLogin without-password     //注释此行
-PermitRootLogin yes                             //加入此行
-StrictModes yes
+<h3 id="切换到-Root"><a href="#切换到-Root" class="headerlink" title="切换到 Root"></a>切换到 Root</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure>
 
-重启服务
-service ssh restart</code></pre><h1 id="用户账户说明"><a href="#用户账户说明" class="headerlink" title="用户账户说明"></a>用户账户说明</h1><h3 id="普通用户"><a href="#普通用户" class="headerlink" title="普通用户"></a>普通用户</h3><p>普通用户在系统上的任务是进行普通操作</p>
+<h3 id="设置允许远程登录-Root"><a href="#设置允许远程登录-Root" class="headerlink" title="设置允许远程登录 Root"></a>设置允许远程登录 Root</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line"># Authentication:</span><br><span class="line">LoginGraceTime 120</span><br><span class="line">#PermitRootLogin without-password     //注释此行</span><br><span class="line">PermitRootLogin yes                             //加入此行</span><br><span class="line">StrictModes yes</span><br><span class="line"></span><br><span class="line">重启服务</span><br><span class="line">service ssh restart</span><br></pre></td></tr></table></figure>
+
+<h1 id="用户账户说明"><a href="#用户账户说明" class="headerlink" title="用户账户说明"></a>用户账户说明</h1><h3 id="普通用户"><a href="#普通用户" class="headerlink" title="普通用户"></a>普通用户</h3><p>普通用户在系统上的任务是进行普通操作</p>
 <h3 id="超级管理员"><a href="#超级管理员" class="headerlink" title="超级管理员"></a>超级管理员</h3><p>管理员在系统上的任务是对普通用户和整个系统进行管理。对系统具有绝对的控制权，能够对系统进行一切操作。用 root 表示，root 用户在系统中拥有最高权限，默认下 Ubuntu 用户的 root 用户是不能登录的。</p>
 <h1 id="安装时创建的系统用户"><a href="#安装时创建的系统用户" class="headerlink" title="安装时创建的系统用户"></a>安装时创建的系统用户</h1><p>此用户创建时被添加到 admin 组中，在 Ubuntu 中，admin 组中的用户默认是可以使用 sudo 命令来执行只有管理员才能执行的命令的。如果不使用 <code>sudo</code> 就是一个普通用户。</p>
 <h1 id="组账户说明"><a href="#组账户说明" class="headerlink" title="组账户说明"></a>组账户说明</h1><h3 id="私有组"><a href="#私有组" class="headerlink" title="私有组"></a>私有组</h3><p>当创建一个用户时没有指定属于哪个组，Linux 就会建立一个与用户同名的私有组，此私有组只含有该用户。</p>
@@ -530,41 +527,25 @@ service ssh restart</code></pre><h1 id="用户账户说明"><a href="#用户账�
 <li>用户组名</li>
 <li>密码列</li>
 <li>用户组管理员的账号</li>
-<li>用户组所属账号<h3 id="账户管理常用命"><a href="#账户管理常用命" class="headerlink" title="账户管理常用命"></a>账户管理常用命</h3><h4 id="增加用户"><a href="#增加用户" class="headerlink" title="增加用户"></a>增加用户</h4><pre><code>useradd 用户名
-useradd -u (UID号)
-useradd -p (口令)
-useradd -g (分组)
-useradd -s (SHELL)
-useradd -d (用户目录)</code></pre></li>
+<li>用户组所属账号<h3 id="账户管理常用命"><a href="#账户管理常用命" class="headerlink" title="账户管理常用命"></a>账户管理常用命</h3><h4 id="增加用户"><a href="#增加用户" class="headerlink" title="增加用户"></a>增加用户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">useradd 用户名</span><br><span class="line">useradd -u (UID号)</span><br><span class="line">useradd -p (口令)</span><br><span class="line">useradd -g (分组)</span><br><span class="line">useradd -s (SHELL)</span><br><span class="line">useradd -d (用户目录)</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 <p>如：<code>useradd lusifer</code></p>
 <p>增加用户名为 lusifer 的账户</p>
-<h4 id="修改用户"><a href="#修改用户" class="headerlink" title="修改用户"></a>修改用户</h4><pre><code>usermod -u (新UID)
-usermod -d (用户目录)
-usermod -g (组名)
-usermod -s (SHELL)
-usermod -p (新口令)
-usermod -l (新登录名)
-usermod -L (锁定用户账号密码)
-usermod -U (解锁用户账号)</code></pre><p>如：<code>usermod -u 1024 -g group2 -G root lusifer</code></p>
+<h4 id="修改用户"><a href="#修改用户" class="headerlink" title="修改用户"></a>修改用户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">usermod -u (新UID)</span><br><span class="line">usermod -d (用户目录)</span><br><span class="line">usermod -g (组名)</span><br><span class="line">usermod -s (SHELL)</span><br><span class="line">usermod -p (新口令)</span><br><span class="line">usermod -l (新登录名)</span><br><span class="line">usermod -L (锁定用户账号密码)</span><br><span class="line">usermod -U (解锁用户账号)</span><br></pre></td></tr></table></figure>
+
+<p>如：<code>usermod -u 1024 -g group2 -G root lusifer</code></p>
 <p>将 lusifer 用户 uid 修改为 1024，默认组改为系统中已经存在的 group2，并且加入到系统管理员组</p>
-<h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><pre><code>userdel 用户名 (删除用户账号)
-userdel -r 删除账号时同时删除目录</code></pre><p>如：<code>userdel -r lusifer</code></p>
+<h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">userdel 用户名 (删除用户账号)</span><br><span class="line">userdel -r 删除账号时同时删除目录</span><br></pre></td></tr></table></figure>
+
+<p>如：<code>userdel -r lusifer</code></p>
 <p>删除用户名为 lusifer 的账户并同时删除 lusifer 的用户目录</p>
-<h3 id="组账户维护"><a href="#组账户维护" class="headerlink" title="组账户维护"></a>组账户维护</h3><pre><code>groupadd 组账户名 (创建新组)
-groupadd -g 指定组GID
-groupmod -g 更改组的GID
-groupmod -n 更改组账户名
-groupdel 组账户名 (删除指定组账户)</code></pre><h3 id="口令维护"><a href="#口令维护" class="headerlink" title="口令维护"></a>口令维护</h3><pre><code>passwd 用户账户名 (设置用户口令)
-passwd -l 用户账户名 (锁定用户账户)
-passwd -u 用户账户名 (解锁用户账户)
-passwd -d 用户账户名 (删除账户口令)
-gpasswd -a 用户账户名 组账户名 (将指定用户添加到指定组)
-gpasswd -d 用户账户名 组账户名 (将用户从指定组中删除)
-gpasswd -A 用户账户名 组账户名 (将用户指定为组的管理员)</code></pre><h4 id="用户和组状态"><a href="#用户和组状态" class="headerlink" title="用户和组状态"></a>用户和组状态</h4><pre><code>su 用户名(切换用户账户)
-id 用户名(显示用户的UID，GID)
-whoami (显示当前用户名称)
-groups (显示用户所属组)</code></pre>
+<h3 id="组账户维护"><a href="#组账户维护" class="headerlink" title="组账户维护"></a>组账户维护</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">groupadd 组账户名 (创建新组)</span><br><span class="line">groupadd -g 指定组GID</span><br><span class="line">groupmod -g 更改组的GID</span><br><span class="line">groupmod -n 更改组账户名</span><br><span class="line">groupdel 组账户名 (删除指定组账户)</span><br></pre></td></tr></table></figure>
+
+<h3 id="口令维护"><a href="#口令维护" class="headerlink" title="口令维护"></a>口令维护</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">passwd 用户账户名 (设置用户口令)</span><br><span class="line">passwd -l 用户账户名 (锁定用户账户)</span><br><span class="line">passwd -u 用户账户名 (解锁用户账户)</span><br><span class="line">passwd -d 用户账户名 (删除账户口令)</span><br><span class="line">gpasswd -a 用户账户名 组账户名 (将指定用户添加到指定组)</span><br><span class="line">gpasswd -d 用户账户名 组账户名 (将用户从指定组中删除)</span><br><span class="line">gpasswd -A 用户账户名 组账户名 (将用户指定为组的管理员)</span><br></pre></td></tr></table></figure>
+
+<h4 id="用户和组状态"><a href="#用户和组状态" class="headerlink" title="用户和组状态"></a>用户和组状态</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su 用户名(切换用户账户)</span><br><span class="line">id 用户名(显示用户的UID，GID)</span><br><span class="line">whoami (显示当前用户名称)</span><br><span class="line">groups (显示用户所属组)</span><br></pre></td></tr></table></figure>
             </div>
             <hr />
 
@@ -726,7 +707,7 @@ groups (显示用户所属组)</code></pre>
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/08/26/linux-yong-hu-he-zu-guan-li/" property="cc:attributionName"
                rel="cc:attributionURL">
-                乐乐
+                小乐
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -749,28 +730,6 @@ groups (显示用户所属组)</code></pre>
         </div>
     </div>
 
-    
-    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: 'leblog.github.io',
-        owner: 'leblog',
-        admin: "leblog",
-        id: '2018/08/26/linux-yong-hu-he-zu-guan-li/',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
     
 
     
@@ -1048,53 +1007,54 @@ groups (显示用户所属组)</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2018/08/26/linux-yong-hu-he-zu-guan-li/">
+                <a href="/2019/02/03/wei-xin-xiao-cheng-xu-yu-hou-duan-springboot-tong-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Linux 用户和组管理">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="微信小程序与后端SpringBoot通信">
                         
-                        <span class="card-title">Linux 用户和组管理</span>
+                        <span class="card-title">微信小程序与后端SpringBoot通信</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux 用户和组管理Linux 操作系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。
-使用 Root 用户在实际生产操作中，我们基本
+                            微信小程序与后端SpringBoot通信案例概述微信小程序请求后端SpirngBoot,中间使用Ngrok做内网穿透.
+内网穿透Ngrok配置下载Ngrok
+https://ngrok.com/download
+
+注册并配置Ngrok认证注
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-08-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                    Linux
+                            <a href="/categories/SpringBoot/" class="post-category" target="_blank">
+                                    SpringBoot
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
+                    <a href="/tags/SpringBoot/" target="_blank">
+                        <span class="chip bg-color">SpringBoot</span>
                     </a>
                     
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/微信小程序/" target="_blank">
+                        <span class="chip bg-color">微信小程序</span>
                     </a>
                     
                 </div>
@@ -1112,7 +1072,7 @@ groups (显示用户所属组)</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Linux LVM 磁盘扩容">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Linux LVM 磁盘扩容">
                         
                         <span class="card-title">Linux LVM 磁盘扩容</span>
                     </div>
@@ -1183,8 +1143,8 @@ groups (显示用户所属组)</code></pre>
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 乐乐的博客<br />'
-            + '作者: 乐乐<br />'
+            + '来源: 程序员小乐<br />'
+            + '作者: 小乐<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1305,7 +1265,7 @@ groups (显示用户所属组)</code></pre>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.2k</span>
+            <span class="white-color">37.1k</span>
             
 
             <br>
@@ -1471,6 +1431,17 @@ $(function () {
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
 
 
 
