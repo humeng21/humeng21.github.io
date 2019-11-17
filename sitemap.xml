@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.hanlele.cn/2019/05/17/ajax-fen-ye/</loc>
+    <loc>http://www.hanlele.cn/2019/04/08/java-fen-bu-shi-de-chuang-jian/</loc>
     
-    <lastmod>2019-11-17T14:02:03.209Z</lastmod>
+    <lastmod>2019-11-17T14:19:34.648Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.hanlele.cn/2019/04/17/java-fen-bu-shi-de-chuang-jian/</loc>
+    <loc>http://www.hanlele.cn/2019/05/12/ajax-fen-ye/</loc>
     
-    <lastmod>2019-11-17T13:51:45.059Z</lastmod>
+    <lastmod>2019-11-17T14:19:22.882Z</lastmod>
     
   </url>
   
@@ -303,13 +303,6 @@
   </url>
   
   <url>
-    <loc>http://www.hanlele.cn/404.html</loc>
-    
-    <lastmod>2019-09-26T05:13:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.hanlele.cn/archives/index.html</loc>
     
     <lastmod>2019-09-26T05:13:10.000Z</lastmod>
@@ -325,6 +318,13 @@
   
   <url>
     <loc>http://www.hanlele.cn/tags/index.html</loc>
+    
+    <lastmod>2019-09-26T05:13:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.hanlele.cn/404.html</loc>
     
     <lastmod>2019-09-26T05:13:10.000Z</lastmod>
     
