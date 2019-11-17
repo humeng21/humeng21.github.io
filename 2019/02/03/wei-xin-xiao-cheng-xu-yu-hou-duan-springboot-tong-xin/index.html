@@ -453,7 +453,7 @@ https://ngrok.com/download
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    885
+                    810
                 </div>
                 
 
@@ -490,18 +490,210 @@ https://ngrok.com/download
 <p>Ngrok的作用说白了就是将你本地某个端口上运行的服务暴露在了公网上.</p>
 <p>这里的穿透指的就是将内网中的服务穿过防火墙.<br><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/ED9712F8F49443C1B0A9D65EAA8B6E8A/2665" alt></p>
 <h3 id="后端SpringBoot"><a href="#后端SpringBoot" class="headerlink" title="后端SpringBoot"></a>后端SpringBoot</h3><h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><p>接收微信小程序发来的请求,并根据请求做出响应</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">package le.controll;</span><br><span class="line"></span><br><span class="line">import le.domain.Info;</span><br><span class="line">import le.utils.JSONResult;</span><br><span class="line">import org.springframework.stereotype.Controller;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.ResponseBody;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* @program: SpringBootIntrodoction</span><br><span class="line">* @description:</span><br><span class="line">* @author: Mr.Han</span><br><span class="line">* @create: 2019-01-26 22:16</span><br><span class="line">**/</span><br><span class="line">@Controller</span><br><span class="line">public class QuickController2 &#123;</span><br><span class="line"></span><br><span class="line">    @RequestMapping(&quot;/info&quot;)</span><br><span class="line">    @ResponseBody</span><br><span class="line">    public JSONResult quick(Info info) &#123;</span><br><span class="line">        System.out.println(info.toString());</span><br><span class="line">        return JSONResult.ok(info);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>package le.controll;
 
-<h3 id="实体类"><a href="#实体类" class="headerlink" title="实体类"></a>实体类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">package le.domain;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import java.io.Serializable;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* @program: SpringBootIntrodoction</span><br><span class="line">* @description: 测试实体类</span><br><span class="line">* @author: Mr.Han</span><br><span class="line">* @create: 2019-02-01 14:13</span><br><span class="line">**/</span><br><span class="line">public class Info implements Serializable &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private String personName;</span><br><span class="line">    private Integer age;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getPersonName() &#123;</span><br><span class="line">        return personName;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setPersonName(String personName) &#123;</span><br><span class="line">        this.personName = personName;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setAge(Integer age) &#123;</span><br><span class="line">        this.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String toString() &#123;</span><br><span class="line">        return &quot;Info&#123;&quot; +</span><br><span class="line">                &quot;name=&apos;&quot; + name + &apos;\&apos;&apos; +</span><br><span class="line">                &quot;, personName=&apos;&quot; + personName + &apos;\&apos;&apos; +</span><br><span class="line">                &quot;, age=&quot; + age +</span><br><span class="line">                &apos;&#125;&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+import le.domain.Info;
+import le.utils.JSONResult;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-<h3 id="JSON工具类"><a href="#JSON工具类" class="headerlink" title="JSON工具类"></a>JSON工具类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">package chen.utils;</span><br><span class="line"></span><br><span class="line">import chen.domain.Info;</span><br><span class="line">import com.fasterxml.jackson.databind.util.JSONPObject;</span><br><span class="line">import org.springframework.boot.configurationprocessor.json.JSONObject;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* @program: SpringBootIntrodoction</span><br><span class="line">* @description: 实体类转换成JSON</span><br><span class="line">* @author: Mr.Han</span><br><span class="line">* @create: 2019-02-01 14:17</span><br><span class="line">**/</span><br><span class="line">public class JSONResult &#123;</span><br><span class="line"></span><br><span class="line">    // 响应业务状态</span><br><span class="line">    private Integer status;</span><br><span class="line"></span><br><span class="line">    // 响应消息</span><br><span class="line">    private String msg;</span><br><span class="line"></span><br><span class="line">    // 响应中的数据</span><br><span class="line">    private Object data;</span><br><span class="line"></span><br><span class="line">    private String ok;    // 不使用</span><br><span class="line"></span><br><span class="line">    public static JSONResult build(Integer status, String msg, Object data) &#123;</span><br><span class="line">        return new JSONResult(status, msg, data);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult ok(Object data) &#123;</span><br><span class="line">        return new JSONResult(data);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult ok() &#123;</span><br><span class="line">        return new JSONResult(null);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult errorMsg(String msg) &#123;</span><br><span class="line">        return new JSONResult(500, msg, null);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult errorMap(Object data) &#123;</span><br><span class="line">        return new JSONResult(501, &quot;error&quot;, data);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult errorTokenMsg(String msg) &#123;</span><br><span class="line">        return new JSONResult(502, msg, null);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static JSONResult errorException(String msg) &#123;</span><br><span class="line">        return new JSONResult(555, msg, null);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public JSONResult() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public JSONResult(Integer status, String msg, Object data) &#123;</span><br><span class="line">        this.status = status;</span><br><span class="line">        this.msg = msg;</span><br><span class="line">        this.data = data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public JSONResult(Object data) &#123;</span><br><span class="line">        this.status = 200;</span><br><span class="line">        this.msg = &quot;OK&quot;;</span><br><span class="line">        this.data = data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Boolean isOK() &#123;</span><br><span class="line">        return this.status == 200;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getStatus() &#123;</span><br><span class="line">        return status;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setStatus(Integer status) &#123;</span><br><span class="line">        this.status = status;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getMsg() &#123;</span><br><span class="line">        return msg;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setMsg(String msg) &#123;</span><br><span class="line">        this.msg = msg;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Object getData() &#123;</span><br><span class="line">        return data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setData(Object data) &#123;</span><br><span class="line">        this.data = data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getOk() &#123;</span><br><span class="line">        return ok;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setOk(String ok) &#123;</span><br><span class="line">        this.ok = ok;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+/**
+* @program: SpringBootIntrodoction
+* @description:
+* @author: Mr.Han
+* @create: 2019-01-26 22:16
+**/
+@Controller
+public class QuickController2 {
 
-<h3 id="微信小程序端"><a href="#微信小程序端" class="headerlink" title="微信小程序端"></a>微信小程序端</h3><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view bindtap=&quot;clickMe&quot;&gt;点击发送请求&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+    @RequestMapping(&quot;/info&quot;)
+    @ResponseBody
+    public JSONResult quick(Info info) {
+        System.out.println(info.toString());
+        return JSONResult.ok(info);
+    }
+}</code></pre><h3 id="实体类"><a href="#实体类" class="headerlink" title="实体类"></a>实体类</h3><pre><code>package le.domain;
 
-<p>绑定了一个bindtap事件,点击的时候发送请求</p>
-<h3 id="JS代码"><a href="#JS代码" class="headerlink" title="JS代码"></a>JS代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">// pages/requestinterface/requestinterface.js</span><br><span class="line">Page(&#123;</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">  * 页面的初始数据</span><br><span class="line">  */</span><br><span class="line">  data: &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line">  clickMe: function() &#123;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: &apos;ngrok公网接口&apos;,</span><br><span class="line">      data: &#123;</span><br><span class="line">        personName: &quot;张三的父亲&quot;,</span><br><span class="line">        name: &quot;张三&quot;,</span><br><span class="line">        age: 18</span><br><span class="line">      &#125;,</span><br><span class="line">      header: &#123;</span><br><span class="line">        &apos;content-type&apos;: &apos;application/json&apos; </span><br><span class="line">      &#125;,</span><br><span class="line">      success(res) &#123;</span><br><span class="line">        console.log(res.data)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<h3 id="完整的流程"><a href="#完整的流程" class="headerlink" title="完整的流程"></a>完整的流程</h3><p><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/7DA9DB9E98644776B0AD870AAAC8523C/2667" alt></p>
+import java.io.Serializable;
+
+/**
+* @program: SpringBootIntrodoction
+* @description: 测试实体类
+* @author: Mr.Han
+* @create: 2019-02-01 14:13
+**/
+public class Info implements Serializable {
+    private String name;
+    private String personName;
+    private Integer age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPersonName() {
+        return personName;
+    }
+
+    public void setPersonName(String personName) {
+        this.personName = personName;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return &quot;Info{&quot; +
+                &quot;name=&#39;&quot; + name + &#39;\&#39;&#39; +
+                &quot;, personName=&#39;&quot; + personName + &#39;\&#39;&#39; +
+                &quot;, age=&quot; + age +
+                &#39;}&#39;;
+    }
+}</code></pre><h3 id="JSON工具类"><a href="#JSON工具类" class="headerlink" title="JSON工具类"></a>JSON工具类</h3><pre><code>package chen.utils;
+
+import chen.domain.Info;
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import org.springframework.boot.configurationprocessor.json.JSONObject;
+
+/**
+* @program: SpringBootIntrodoction
+* @description: 实体类转换成JSON
+* @author: Mr.Han
+* @create: 2019-02-01 14:17
+**/
+public class JSONResult {
+
+    // 响应业务状态
+    private Integer status;
+
+    // 响应消息
+    private String msg;
+
+    // 响应中的数据
+    private Object data;
+
+    private String ok;    // 不使用
+
+    public static JSONResult build(Integer status, String msg, Object data) {
+        return new JSONResult(status, msg, data);
+    }
+
+    public static JSONResult ok(Object data) {
+        return new JSONResult(data);
+    }
+
+    public static JSONResult ok() {
+        return new JSONResult(null);
+    }
+
+    public static JSONResult errorMsg(String msg) {
+        return new JSONResult(500, msg, null);
+    }
+
+    public static JSONResult errorMap(Object data) {
+        return new JSONResult(501, &quot;error&quot;, data);
+    }
+
+    public static JSONResult errorTokenMsg(String msg) {
+        return new JSONResult(502, msg, null);
+    }
+
+    public static JSONResult errorException(String msg) {
+        return new JSONResult(555, msg, null);
+    }
+
+    public JSONResult() {
+
+    }
+
+    public JSONResult(Integer status, String msg, Object data) {
+        this.status = status;
+        this.msg = msg;
+        this.data = data;
+    }
+
+    public JSONResult(Object data) {
+        this.status = 200;
+        this.msg = &quot;OK&quot;;
+        this.data = data;
+    }
+
+    public Boolean isOK() {
+        return this.status == 200;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public void setData(Object data) {
+        this.data = data;
+    }
+
+    public String getOk() {
+        return ok;
+    }
+
+    public void setOk(String ok) {
+        this.ok = ok;
+    }
+
+}</code></pre><h3 id="微信小程序端"><a href="#微信小程序端" class="headerlink" title="微信小程序端"></a>微信小程序端</h3><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><pre><code>&lt;view bindtap=&quot;clickMe&quot;&gt;点击发送请求&lt;/view&gt;</code></pre><p>绑定了一个bindtap事件,点击的时候发送请求</p>
+<h3 id="JS代码"><a href="#JS代码" class="headerlink" title="JS代码"></a>JS代码</h3><pre><code>// pages/requestinterface/requestinterface.js
+Page({
+
+  /**
+  * 页面的初始数据
+  */
+  data: {
+
+  },
+  clickMe: function() {
+    wx.request({
+      url: &#39;ngrok公网接口&#39;,
+      data: {
+        personName: &quot;张三的父亲&quot;,
+        name: &quot;张三&quot;,
+        age: 18
+      },
+      header: {
+        &#39;content-type&#39;: &#39;application/json&#39; 
+      },
+      success(res) {
+        console.log(res.data)
+      }
+    })
+  }
+
+})</code></pre><h3 id="完整的流程"><a href="#完整的流程" class="headerlink" title="完整的流程"></a>完整的流程</h3><p><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/7DA9DB9E98644776B0AD870AAAC8523C/2667" alt></p>
 <h3 id="特别提醒"><a href="#特别提醒" class="headerlink" title="特别提醒"></a>特别提醒</h3><p>因为我们使用的是Ngrok做的内网穿透,微信小程序默认识别出Ngrok的接口时非法的.<br><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/1A5B10B7B372467BA836F71645423091/2669" alt></p>
 <p>这时候我们就必须要<strong>设置不校验合法域名</strong></p>
 <p><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/5C3B2976BF574C7780F48218C16B37B3/2671" alt></p>
@@ -1232,7 +1424,7 @@ https://ngrok.com/download
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">37.1k</span>
+            <span class="white-color">37k</span>
             
 
             <br>
