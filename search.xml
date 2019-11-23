@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>Ajax分页</title>
-      <link href="/2019/05/12/ajax-fen-ye/"/>
-      <url>/2019/05/12/ajax-fen-ye/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Ajax分页已经封装完成-简单快捷使用-可遍历部分属性"><a href="#Ajax分页已经封装完成-简单快捷使用-可遍历部分属性" class="headerlink" title="Ajax分页已经封装完成 简单快捷使用[可遍历部分属性]"></a>Ajax分页已经封装完成 简单快捷使用[可遍历部分属性]</h3><p>修改自己的请求地址  </p><p><strong>注意</strong>： 样式需要导入bootstrap样式会好看一点</p><p>分页查询链接 返回的是一个总数目的int 值  在数据库查总条数就可以了</p><p><strong>单页数据查询返回的是一个json格式的数组</strong> </p><p><strong>注意：</strong> 需要导入jQuery的jar包</p><p>代码如下：</p><pre><code>var page=1;      var pageend=0;      /**       *       * 每页条目数量pagecount       *       */      var pagecount=5;      /**       *       * headnames  分页标题名称  按照顺序书写       *       */      var headnames=new Array(&quot;id&quot;,&quot;用户名&quot;,&quot;where are you from&quot;)      /**       *       * notlookattr  不需要遍历的对象属性       *       */      var notlookattr=new Array(&quot;pwd&quot;)      /**       *       * Numberhref  分页查询 链接       *       */      var Numberhref=&quot;/user/selectPzd&quot;;      /**       *       * limithref  单页数据查询 链接       *       */      var limithref=&quot;/user/selectPzdLimit&quot;;      /**       *       * 刷新分页方法*********************    flseh()  *******       *       */      var pagechange=1;      function  pageTurn(data){          console.log(data)          if(data==&quot;?&quot;){              if(page!=1){                  page=page-1;                  flseh();              }          }else if(data==&quot;?&quot;){              if(page!=pageend){                  page=parseInt(page)+1;                  flseh();              }          }else if(data==&quot;...&quot;){              var endli=$(&quot;#pages li&quot;).slice($(&quot;#pages li&quot;).length-4,$(&quot;#pages li&quot;).length-3);              pagechange=endli.text();              page=pagechange;              flseh()          }else if(data==&quot;.&quot;){              var endli=$(&quot;#pages li&quot;).slice(2,3);              if(endli.text()!=1){                  pagechange=parseInt(endli.text())-10;                  page=pagechange;              }              flseh()          }else{              page=parseInt(data);              flseh();          }      }      function flseh(){          $.post(Numberhref,function (data) {              $(&quot;#pages li&quot;).remove();              pageend=data/pagecount;              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;#171;&lt;/a&gt;&lt;/li&gt;&#39;)              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;.&lt;/a&gt;&lt;/li&gt;&#39;)              for (var i=pagechange;i&lt;data/pagecount+1;i++){                  $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#39;+i+&#39;&lt;/a&gt;&lt;/li&gt;&#39;)                  if(i-pagechange&gt;10){                      $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;&#39;)                      break;                  }              }              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;#187;&lt;/a&gt;&lt;/li&gt;&#39;)          })          $(&quot;.usershead td&quot;).remove();          for (var i = 0; i &lt;headnames.length ; i++) {              $(&quot;.usershead&quot;).append(&#39;&lt;td&gt;&#39;+ headnames[i]+&#39;&lt;/td&gt;&#39;)          }          $.post(limithref,{begin:(page-1)*pagecount,end:pagecount},function (data) {              $(&quot;#users tr&quot;).remove();              for (var i=0;i&lt;pagecount;i++){                  $(&quot;#users&quot;).append(&#39;&lt;tr id=&quot;&#39;+i+&#39;pagerow&quot;&gt;&lt;/tr&gt;&#39;)                  Object.getOwnPropertyNames(data[i]).forEach(function (key) {                      var notlookboo=true;                      for(var j=0;j&lt;notlookattr.length;j++){                          if(key==notlookattr[j]){                              notlookboo=false;                          }                      }                      if(notlookboo){                          $(&quot;tr[id=&#39;&quot;+i+&quot;pagerow&#39;]&quot;).append((&#39;&lt;td&gt;&#39; + data[i][key]+ &#39;&lt;/td&gt;&#39;))                      }                  })              }          })      }</code></pre><h2 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h2><p><strong>注意：</strong> 样式需要导入bootstrap样式会好看一点</p><pre><code>&lt;table class=&quot;table table-hover&quot;&gt;        &lt;thead&gt;            &lt;tr class=&quot;usershead&quot;&gt;&lt;/tr&gt;        &lt;/thead&gt;        &lt;tbody id=&quot;users&quot;&gt;        &lt;/tbody&gt;    &lt;/table&gt;    &lt;ul class=&quot;pagination&quot; id=&quot;pages&quot;&gt;    &lt;/ul&gt;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Ajax </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 分页 </tag>
-            
-            <tag> Ajax </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Java分布式的创建</title>
       <link href="/2019/04/08/java-fen-bu-shi-de-chuang-jian/"/>
       <url>/2019/04/08/java-fen-bu-shi-de-chuang-jian/</url>
@@ -555,6 +528,33 @@
             <tag> 学习笔记 </tag>
             
             <tag> 小知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ajax分页</title>
+      <link href="/2018/07/12/ajax-fen-ye/"/>
+      <url>/2018/07/12/ajax-fen-ye/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Ajax分页已经封装完成-简单快捷使用-可遍历部分属性"><a href="#Ajax分页已经封装完成-简单快捷使用-可遍历部分属性" class="headerlink" title="Ajax分页已经封装完成 简单快捷使用[可遍历部分属性]"></a>Ajax分页已经封装完成 简单快捷使用[可遍历部分属性]</h3><p>修改自己的请求地址  </p><p><strong>注意</strong>： 样式需要导入bootstrap样式会好看一点</p><p>分页查询链接 返回的是一个总数目的int 值  在数据库查总条数就可以了</p><p><strong>单页数据查询返回的是一个json格式的数组</strong> </p><p><strong>注意：</strong> 需要导入jQuery的jar包</p><p>代码如下：</p><pre><code>var page=1;      var pageend=0;      /**       *       * 每页条目数量pagecount       *       */      var pagecount=5;      /**       *       * headnames  分页标题名称  按照顺序书写       *       */      var headnames=new Array(&quot;id&quot;,&quot;用户名&quot;,&quot;where are you from&quot;)      /**       *       * notlookattr  不需要遍历的对象属性       *       */      var notlookattr=new Array(&quot;pwd&quot;)      /**       *       * Numberhref  分页查询 链接       *       */      var Numberhref=&quot;/user/selectPzd&quot;;      /**       *       * limithref  单页数据查询 链接       *       */      var limithref=&quot;/user/selectPzdLimit&quot;;      /**       *       * 刷新分页方法*********************    flseh()  *******       *       */      var pagechange=1;      function  pageTurn(data){          console.log(data)          if(data==&quot;?&quot;){              if(page!=1){                  page=page-1;                  flseh();              }          }else if(data==&quot;?&quot;){              if(page!=pageend){                  page=parseInt(page)+1;                  flseh();              }          }else if(data==&quot;...&quot;){              var endli=$(&quot;#pages li&quot;).slice($(&quot;#pages li&quot;).length-4,$(&quot;#pages li&quot;).length-3);              pagechange=endli.text();              page=pagechange;              flseh()          }else if(data==&quot;.&quot;){              var endli=$(&quot;#pages li&quot;).slice(2,3);              if(endli.text()!=1){                  pagechange=parseInt(endli.text())-10;                  page=pagechange;              }              flseh()          }else{              page=parseInt(data);              flseh();          }      }      function flseh(){          $.post(Numberhref,function (data) {              $(&quot;#pages li&quot;).remove();              pageend=data/pagecount;              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;#171;&lt;/a&gt;&lt;/li&gt;&#39;)              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;.&lt;/a&gt;&lt;/li&gt;&#39;)              for (var i=pagechange;i&lt;data/pagecount+1;i++){                  $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#39;+i+&#39;&lt;/a&gt;&lt;/li&gt;&#39;)                  if(i-pagechange&gt;10){                      $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;&#39;)                      break;                  }              }              $(&quot;#pages&quot;).append(&#39;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;#187;&lt;/a&gt;&lt;/li&gt;&#39;)          })          $(&quot;.usershead td&quot;).remove();          for (var i = 0; i &lt;headnames.length ; i++) {              $(&quot;.usershead&quot;).append(&#39;&lt;td&gt;&#39;+ headnames[i]+&#39;&lt;/td&gt;&#39;)          }          $.post(limithref,{begin:(page-1)*pagecount,end:pagecount},function (data) {              $(&quot;#users tr&quot;).remove();              for (var i=0;i&lt;pagecount;i++){                  $(&quot;#users&quot;).append(&#39;&lt;tr id=&quot;&#39;+i+&#39;pagerow&quot;&gt;&lt;/tr&gt;&#39;)                  Object.getOwnPropertyNames(data[i]).forEach(function (key) {                      var notlookboo=true;                      for(var j=0;j&lt;notlookattr.length;j++){                          if(key==notlookattr[j]){                              notlookboo=false;                          }                      }                      if(notlookboo){                          $(&quot;tr[id=&#39;&quot;+i+&quot;pagerow&#39;]&quot;).append((&#39;&lt;td&gt;&#39; + data[i][key]+ &#39;&lt;/td&gt;&#39;))                      }                  })              }          })      }</code></pre><h2 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h2><p><strong>注意：</strong> 样式需要导入bootstrap样式会好看一点</p><pre><code>&lt;table class=&quot;table table-hover&quot;&gt;        &lt;thead&gt;            &lt;tr class=&quot;usershead&quot;&gt;&lt;/tr&gt;        &lt;/thead&gt;        &lt;tbody id=&quot;users&quot;&gt;        &lt;/tbody&gt;    &lt;/table&gt;    &lt;ul class=&quot;pagination&quot; id=&quot;pages&quot;&gt;    &lt;/ul&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Ajax </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分页 </tag>
+            
+            <tag> Ajax </tag>
             
         </tags>
       
