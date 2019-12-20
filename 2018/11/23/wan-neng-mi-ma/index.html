@@ -294,7 +294,7 @@ asp aspx万能密码1：&amp;quot;or &amp;quot;a&amp;q">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1070,7 +1070,7 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="MySQL优化">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="MySQL优化">
                         
                         <span class="card-title">MySQL优化</span>
                     </div>
@@ -1126,7 +1126,7 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="SQL注入的简单案例">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="SQL注入的简单案例">
                         
                         <span class="card-title">SQL注入的简单案例</span>
                     </div>
@@ -1324,7 +1324,7 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
             &copy; 2019 LeLe. All Rights Reserved.
-
+            
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
             <span class="white-color">49.5k</span>
@@ -1341,6 +1341,8 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
                 <i class="fa fa-heart-o"></i>
                 本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
             </span>
+            
+
             
             
             <span id="busuanzi_container_site_uv" style='display:none'>
@@ -1385,8 +1387,8 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
 <script>
     $(document).ready(function () {
 
-        var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
+        var int = setInterval(fixCount, 50);// 50ms周期检测函数
+        var pvcountOffset = 80000;// 初始化首次数据
         var uvcountOffset = 20000;
 
         function fixCount() {
@@ -1396,7 +1398,7 @@ WWW日志默认位置：%systemroot%\system32\logfiles\w3svc1\，默认每天一
             }
             if ($("#busuanzi_container_site_pv").css("display") != "none") {
                 $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
-                clearInterval(int);
+                clearInterval(int);// 停止检测
             }
         }
     });

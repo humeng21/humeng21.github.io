@@ -299,7 +299,7 @@ HTTP的底层是TCP/IP。所以">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -990,7 +990,7 @@ HTTP的底层是TCP/IP。所以">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="JAVA小知识总结">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JAVA小知识总结">
                         
                         <span class="card-title">JAVA小知识总结</span>
                     </div>
@@ -1041,7 +1041,7 @@ HTTP的底层是TCP/IP。所以">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Ajax分页">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Ajax分页">
                         
                         <span class="card-title">Ajax分页</span>
                     </div>
@@ -1238,7 +1238,7 @@ HTTP的底层是TCP/IP。所以">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
             &copy; 2019 LeLe. All Rights Reserved.
-
+            
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
             <span class="white-color">49.5k</span>
@@ -1255,6 +1255,8 @@ HTTP的底层是TCP/IP。所以">
                 <i class="fa fa-heart-o"></i>
                 本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
             </span>
+            
+
             
             
             <span id="busuanzi_container_site_uv" style='display:none'>
@@ -1299,8 +1301,8 @@ HTTP的底层是TCP/IP。所以">
 <script>
     $(document).ready(function () {
 
-        var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
+        var int = setInterval(fixCount, 50);// 50ms周期检测函数
+        var pvcountOffset = 80000;// 初始化首次数据
         var uvcountOffset = 20000;
 
         function fixCount() {
@@ -1310,7 +1312,7 @@ HTTP的底层是TCP/IP。所以">
             }
             if ($("#busuanzi_container_site_pv").css("display") != "none") {
                 $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
-                clearInterval(int);
+                clearInterval(int);// 停止检测
             }
         }
     });
