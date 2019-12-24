@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>CentOS安装宝塔</title>
+      <link href="/2019/06/24/centos-an-zhuang-bao-ta/"/>
+      <url>/2019/06/24/centos-an-zhuang-bao-ta/</url>
+      
+        <content type="html"><![CDATA[<p>1.安装可视化面板</p><pre><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;&amp; sh install.sh</code></pre><p>注意：代码没有换行！如出错，尝试在下面复制，或先复制到记事本删除换行再粘贴到终端。<br>yum install -y wget &amp;&amp; wget -O install.sh <a href="http://download.bt.cn/install/install.sh" target="_blank" rel="noopener">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh</p><p>输入命令后，系统自动下载安装环境，然后输入 y 进行确认。 然后等待约1-5分钟<br><img src="https://note.youdao.com/yws/public/resource/a7b28e89afc8e429d20c7293f6faa483/xmlnote/3FBD6FCD15154A6D8151658F4868B63E/4485" alt><br>如无意外，最后会出现如下类似内容</p><pre><code>Bt-Panel: http://111.230.15.237:8888username: *******password: *******Warning:If you cannot access the panel,release the following port (8888|888|80|443|20|21) in the security group</code></pre><p>系统自动生成账号密码，<br>username 项为账号，<br>pwssword 为密码。<br>请保存好你的账号密码。</p><p>2.启动面板与管理</p><ul><li>启动面板</li></ul><p>控制面板支持：</p><p>一键配置服务器环境（ LAMP / LNMP ）</p><p>一键安全重启</p><p>一键创建管理网站、ftp、数据库</p><p>一键配置（定期备份、数据导入、伪静态、301、SSL、子目录、反向代理、切换 PHP 版本）</p><p>数据库一键导入导出</p><p>系统监控（ CPU、内存、磁盘IO、网络IO ）</p><p>防火墙端口放行</p><p>SSH 开启与关闭及 SSH 端口更改<br>…</p><p>请复制以下命令到终端 ,然后稍等</p><pre><code>service bt restart</code></pre><ul><li>访问面板<br>控制面板地址端口为 8888 ，<br>你的控制面板地址为 <a href="http://123.207.230.231:8888" target="_blank" rel="noopener">http://123.207.230.231:8888</a></li></ul><p>请复制链接到新窗口打开</p><ul><li>添加站点</li></ul><p>在控制面板中，点击左侧导航栏的 网站 一项，添加网站。 域名： 填你的ip 123.207.230.231<br>备注： test<br>根目录：/www/wwwroot/test<br>FTP 、 数据库 两项中，账号密码都填 test<br>点击 提交 即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> 宝塔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java分布式的创建</title>
       <link href="/2019/04/08/java-fen-bu-shi-de-chuang-jian/"/>
       <url>/2019/04/08/java-fen-bu-shi-de-chuang-jian/</url>
@@ -606,9 +633,9 @@
       
         <tags>
             
-            <tag> 教程 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       

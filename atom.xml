@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hanlele.cn/"/>
-  <updated>2019-11-17T14:19:34.648Z</updated>
+  <updated>2019-12-24T10:45:01.870Z</updated>
   <id>http://www.hanlele.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS安装宝塔</title>
+    <link href="http://www.hanlele.cn/2019/06/24/centos-an-zhuang-bao-ta/"/>
+    <id>http://www.hanlele.cn/2019/06/24/centos-an-zhuang-bao-ta/</id>
+    <published>2019-06-24T10:34:44.000Z</published>
+    <updated>2019-12-24T10:45:01.870Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.安装可视化面板&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh
+        
+      
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://www.hanlele.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="服务器" scheme="http://www.hanlele.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="宝塔" scheme="http://www.hanlele.cn/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+  </entry>
   
   <entry>
     <title>Java分布式的创建</title>
@@ -542,34 +571,6 @@
     
     
       <category term="JAVA" scheme="http://www.hanlele.cn/tags/JAVA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTTP 请求的 GET 与 POST 方式的区别</title>
-    <link href="http://www.hanlele.cn/2018/07/16/http-qing-qiu-de-get-yu-post-fang-shi-de-qu-bie/"/>
-    <id>http://www.hanlele.cn/2018/07/16/http-qing-qiu-de-get-yu-post-fang-shi-de-qu-bie/</id>
-    <published>2018-07-16T11:04:56.000Z</published>
-    <updated>2019-11-11T11:09:02.641Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;HTTP-请求的-GET-与-POST-方式的区别&quot;&gt;&lt;a href=&quot;#HTTP-请求的-GET-与-POST-方式的区别&quot; class=&quot;headerlink&quot; title=&quot;HTTP 请求的 GET 与 POST 方式的区别&quot;&gt;&lt;/a&gt;HTTP 请求的
-        
-      
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://www.hanlele.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="学习笔记" scheme="http://www.hanlele.cn/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="小知识" scheme="http://www.hanlele.cn/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
