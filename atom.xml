@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>程序员小乐</title>
+  <title>狐獴</title>
   
   <subtitle>热爱生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.hanlele.cn/"/>
-  <updated>2019-11-17T13:10:39.066Z</updated>
-  <id>http://www.hanlele.cn/</id>
+  <link href="http://humeng21.github.io/"/>
+  <updated>2019-12-28T04:15:14.538Z</updated>
+  <id>http://humeng21.github.io/</id>
   
   <author>
-    <name>小乐</name>
+    <name>狐獴</name>
     
   </author>
   
@@ -18,10 +18,10 @@
   
   <entry>
     <title>23种设计模式的设计理念</title>
-    <link href="http://www.hanlele.cn/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/"/>
-    <id>http://www.hanlele.cn/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/</id>
+    <link href="http://humeng21.github.io/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/"/>
+    <id>http://humeng21.github.io/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/</id>
     <published>2018-12-17T13:09:33.000Z</published>
-    <updated>2019-11-17T13:10:39.066Z</updated>
+    <updated>2019-12-28T04:15:14.538Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="设计模式" scheme="http://www.hanlele.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://humeng21.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="23种设计模式" scheme="http://www.hanlele.cn/tags/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="23种设计模式" scheme="http://humeng21.github.io/tags/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
