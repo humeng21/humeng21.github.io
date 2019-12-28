@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://humeng21.github.io/"/>
-  <updated>2019-12-28T04:15:14.538Z</updated>
+  <updated>2019-12-28T04:53:58.941Z</updated>
   <id>http://humeng21.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello-hexo</title>
+    <link href="http://humeng21.github.io/2019/12/28/hello-hexo/"/>
+    <id>http://humeng21.github.io/2019/12/28/hello-hexo/</id>
+    <published>2019-12-28T04:34:24.000Z</published>
+    <updated>2019-12-28T04:53:58.941Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://humeng21.github.io/categories/hexo/"/>
+    
+    
+      <category term="blog" scheme="http://humeng21.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://humeng21.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>23种设计模式的设计理念</title>

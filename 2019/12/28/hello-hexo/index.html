@@ -4,11 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="23种设计模式的设计理念, 狐獴">
+    <meta name="keywords" content="hello-hexo, 狐獴">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="23 种设计模式的设计理念什么是设计模式设计模式（Design pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于">
+    <meta name="description" content="
+
+
+hello hexo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>23种设计模式的设计理念 | 狐獴</title>
+    <title>hello-hexo | 狐獴</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -216,7 +219,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '123';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -229,13 +232,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        23种设计模式的设计理念
+                        hello-hexo
                     </div>
                 </div>
             </div>
@@ -346,8 +349,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/23种设计模式/" target="_blank">
-                            <span class="chip bg-color">23种设计模式</span>
+                        <a href="/tags/blog/" target="_blank">
+                            <span class="chip bg-color">blog</span>
+                        </a>
+                        
+                        <a href="/tags/hexo/" target="_blank">
+                            <span class="chip bg-color">hexo</span>
                         </a>
                         
                     </div>
@@ -358,8 +365,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/设计模式/" class="post-category" target="_blank">
-                            设计模式
+                        <a href="/categories/hexo/" class="post-category" target="_blank">
+                            hexo
                         </a>
                         
                     </div>
@@ -370,7 +377,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-12-17
+                    2019-12-28
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -384,14 +391,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    2
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
                 
@@ -407,41 +414,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="23-种设计模式的设计理念"><a href="#23-种设计模式的设计理念" class="headerlink" title="23 种设计模式的设计理念"></a>23 种设计模式的设计理念</h1><h3 id="什么是设计模式"><a href="#什么是设计模式" class="headerlink" title="什么是设计模式"></a>什么是设计模式</h3><p>设计模式（Design pattern）是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性。 毫无疑问，设计模式于己于他人于系统都是多赢的，设计模式使代码编制真正工程化，设计模式是软件工程的基石，如同大厦的一块块砖石一样。项目中合理的运用设计模式可以完美的解决很多问题，每种模式在现在中都有相应的原理来与之对应，每一个模式描述了一个在我们周围不断重复发生的问题，以及该问题的核心解决方案，这也是它能被广泛应用的原因。简单说：</p>
-<ul>
-<li>模式：在某些场景下，针对某类问题的某种通用的解决方案</li>
-<li>场景：项目所在的环境</li>
-<li>问题：约束条件，项目目标等</li>
-<li>解决方案：通用、可复用的设计，解决约束达到目标<h3 id="设计模式的三个分类"><a href="#设计模式的三个分类" class="headerlink" title="设计模式的三个分类"></a>设计模式的三个分类</h3></li>
-<li>创建型模式：对象实例化的模式，创建型模式用于解耦对象的实例化过程。</li>
-<li>结构型模式：把类或对象结合在一起形成一个更大的结构。</li>
-<li>行为型模式：类和对象如何交互，及划分责任和算法。<h1 id="各分类中模式的关键点"><a href="#各分类中模式的关键点" class="headerlink" title="各分类中模式的关键点"></a>各分类中模式的关键点</h1><h3 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h3></li>
-<li>单例模式：某个类只能有一个实例，提供一个全局的访问点。</li>
-<li>简单工厂：一个工厂类根据传入的参量决定创建出那一种产品类的实例。</li>
-<li>工厂方法：定义一个创建对象的接口，让子类决定实例化那个类。</li>
-<li>抽象工厂：创建相关或依赖对象的家族，而无需明确指定具体类。</li>
-<li>建造者模式：封装一个复杂对象的构建过程，并可以按步骤构造。</li>
-<li>原型模式：通过复制现有的实例来创建新的实例。<h3 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h3></li>
-<li>适配器模式：将一个类的方法接口转换成客户希望的另外一个接口。</li>
-<li>组合模式：将对象组合成树形结构以表示“”部分-整体“”的层次结构。</li>
-<li>装饰模式：动态的给对象添加新的功能。</li>
-<li>代理模式：为其他对象提供一个代理以便控制这个对象的访问。</li>
-<li>亨元（蝇量）模式：通过共享技术来有效的支持大量细粒度的对象。</li>
-<li>外观模式：对外提供一个统一的方法，来访问子系统中的一群接口。</li>
-<li>桥接模式：将抽象部分和它的实现部分分离，使它们都可以独立的变化。<h3 id="行为型模式"><a href="#行为型模式" class="headerlink" title="行为型模式"></a>行为型模式</h3></li>
-<li>模板模式：定义一个算法结构，而将一些步骤延迟到子类实现。</li>
-<li>解释器模式：给定一个语言，定义它的文法的一种表示，并定义一个解释器。</li>
-<li>策略模式：定义一系列算法，把他们封装起来，并且使它们可以相互替换。</li>
-<li>状态模式：允许一个对象在其对象内部状态改变时改变它的行为。</li>
-<li>观察者模式：对象间的一对多的依赖关系。</li>
-<li>备忘录模式：在不破坏封装的前提下，保持对象的内部状态。</li>
-<li>中介者模式：用一个中介对象来封装一系列的对象交互。</li>
-<li>命令模式：将命令请求封装为一个对象，使得可以用不同的请求来进行参数化。</li>
-<li>访问者模式：在不改变数据结构的前提下，增加作用于一组对象元素的新功能。</li>
-<li>责任链模式：将请求的发送者和接收者解耦，使的多个对象都有处理这个请求的机会。</li>
-<li>迭代器模式：一种遍历访问聚合对象中各个元素的方法，不暴露该对象的内部结构。</li>
-</ul>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5269737&auto=1&height=66"></iframe>
 
+
+<h1 id="hello-hexo"><a href="#hello-hexo" class="headerlink" title="hello hexo"></a>hello hexo</h1>
             </div>
             <hr />
 
@@ -599,9 +575,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《23种设计模式的设计理念》
+                    《hello-hexo》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/28/hello-hexo/" property="cc:attributionName"
                rel="cc:attributionURL">
                 狐獴
             </a> 采用
@@ -903,9 +879,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/28/hello-hexo/">
                     <div class="card-image">
@@ -926,9 +903,9 @@ hello hexo
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -941,6 +918,7 @@ hello hexo
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -960,7 +938,7 @@ hello hexo
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/">
@@ -994,7 +972,6 @@ hello hexo
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     

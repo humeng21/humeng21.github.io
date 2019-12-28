@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hello-hexo</title>
+      <link href="/2019/12/28/hello-hexo/"/>
+      <url>/2019/12/28/hello-hexo/</url>
+      
+        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5269737&auto=1&height=66"></iframe><h1 id="hello-hexo"><a href="#hello-hexo" class="headerlink" title="hello hexo"></a>hello hexo</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>23种设计模式的设计理念</title>
       <link href="/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/"/>
       <url>/2018/12/17/23-chong-she-ji-mo-shi-de-she-ji-li-nian/</url>
